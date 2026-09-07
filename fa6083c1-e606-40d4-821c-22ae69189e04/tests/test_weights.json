@@ -1,0 +1,16 @@
+{
+  "test_gold_routine_pinned": 5,
+  "test_metrics_accessor_count_is_gold_specific": 5,
+  "test_value_column_helper_is_gold_specific": 5,
+  "test_indirect_metric_excluded": 5,
+  "test_metrics_declarations_cited": 3,
+  "test_memory_recorder_excluded_from_the_list": 3,
+  "test_timestamp_helper_excluded_from_the_list": 3,
+  "test_external_tsfile_excluded": 3,
+  "test_pair_named_as_external": 1,
+  "test_encoding_slot_convention": 1,
+  "test_jdk_calls_excluded": 1,
+  "test_read_only_respected": 1,
+  "test_modified_code_penalty": -3,
+  "test_indirect_recorder_counted_as_direct": -5
+}

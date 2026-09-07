@@ -1,0 +1,48 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mean agent cost per run by task family">
+<defs>
+<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#faf8f4"/><stop offset="60%" stop-color="#f3efe6"/><stop offset="100%" stop-color="#faf8f4"/></linearGradient>
+<pattern id="hatch" width="10" height="10" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#b9781f"/><line x1="0" y1="0" x2="0" y2="10" stroke="#ffffff" stroke-opacity="0.35" stroke-width="4"/></pattern>
+<filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="6"/></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<text x="110" y="66" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', ui-serif, serif" font-size="40" fill="#0a1414">Mean agent cost per run by task family</text>
+<text x="110" y="100" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="20" letter-spacing="0.5" fill="#4a6560">USD, agent-only (excludes judge cost) · mean of task means within each family</text>
+<line x1="1180" y1="47" x2="1216" y2="47" stroke="#0e8a78" stroke-width="4" stroke-linecap="round"/>
+<circle cx="1198" cy="47" r="6.5" fill="#0e8a78" stroke="#ffffff" stroke-width="2"/>
+<text x="1230" y="56" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="20" fill="#0a1414">opus-5</text>
+<line x1="1356" y1="47" x2="1392" y2="47" stroke="#b9781f" stroke-width="3.5" stroke-dasharray="9 7" stroke-linecap="round"/>
+<polygon points="1374,40 1381,47 1374,54 1367,47" fill="url(#hatch)" stroke="#b9781f" stroke-width="1.5"/>
+<text x="1406" y="56" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="20" fill="#0a1414">glm-5.3</text>
+<line x1="110" y1="770.0" x2="1540" y2="770.0" stroke="rgba(10,30,28,0.10)" stroke-width="1"/>
+<text x="94" y="777.0" text-anchor="end" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="19" fill="#4a6560">$0</text>
+<line x1="110" y1="615.0" x2="1540" y2="615.0" stroke="rgba(10,30,28,0.10)" stroke-width="1"/>
+<text x="94" y="622.0" text-anchor="end" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="19" fill="#4a6560">$4</text>
+<line x1="110" y1="460.0" x2="1540" y2="460.0" stroke="rgba(10,30,28,0.10)" stroke-width="1"/>
+<text x="94" y="467.0" text-anchor="end" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="19" fill="#4a6560">$8</text>
+<line x1="110" y1="305.0" x2="1540" y2="305.0" stroke="rgba(10,30,28,0.10)" stroke-width="1"/>
+<text x="94" y="312.0" text-anchor="end" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="19" fill="#4a6560">$12</text>
+<line x1="110" y1="150.0" x2="1540" y2="150.0" stroke="rgba(10,30,28,0.10)" stroke-width="1"/>
+<text x="94" y="157.0" text-anchor="end" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="19" fill="#4a6560">$16</text>
+<line x1="110" y1="770.0" x2="1540" y2="770.0" stroke="rgba(10,30,28,0.35)" stroke-width="2"/>
+<line x1="467.5" y1="150" x2="467.5" y2="770" stroke="rgba(10,30,28,0.10)" stroke-width="1" stroke-dasharray="2 5"/>
+<line x1="1182.5" y1="150" x2="1182.5" y2="770" stroke="rgba(10,30,28,0.10)" stroke-width="1" stroke-dasharray="2 5"/>
+<polyline points="467.5,656.6 1182.5,638.2" fill="none" stroke="#b9781f" stroke-width="3.5" stroke-dasharray="9 7" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="467.5,573.7 1182.5,249.2" fill="none" stroke="#0e8a78" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="467.5,646.587561265625 477.5,656.587561265625 467.5,666.587561265625 457.5,656.587561265625" fill="#b9781f" opacity="0.28" filter="url(#glow)"/>
+<polygon points="467.5,646.587561265625 477.5,656.587561265625 467.5,666.587561265625 457.5,656.587561265625" fill="url(#hatch)" stroke="#b9781f" stroke-width="1.5"/>
+<circle cx="467.5" cy="573.7" r="9" fill="#0e8a78" opacity="0.28" filter="url(#glow)"/>
+<circle cx="467.5" cy="573.7" r="8" fill="#0e8a78" stroke="#ffffff" stroke-width="3"/>
+<text x="467.5" y="555.7" text-anchor="middle" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="19" font-weight="bold" fill="#0e8a78">$5.07</text>
+<text x="467.5" y="678.6" text-anchor="middle" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="19" font-weight="bold" fill="#b9781f">$2.93</text>
+<text x="467.5" y="810" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', ui-serif, serif" font-size="26" fill="#0a1414">Dependency search</text>
+<text x="467.5" y="838" text-anchor="middle" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="18" fill="#4a6560">n=2</text>
+<polygon points="1182.5,628.24644759375 1192.5,638.24644759375 1182.5,648.24644759375 1172.5,638.24644759375" fill="#b9781f" opacity="0.28" filter="url(#glow)"/>
+<polygon points="1182.5,628.24644759375 1192.5,638.24644759375 1182.5,648.24644759375 1172.5,638.24644759375" fill="url(#hatch)" stroke="#b9781f" stroke-width="1.5"/>
+<circle cx="1182.5" cy="249.2" r="9" fill="#0e8a78" opacity="0.28" filter="url(#glow)"/>
+<circle cx="1182.5" cy="249.2" r="8" fill="#0e8a78" stroke="#ffffff" stroke-width="3"/>
+<text x="1182.5" y="231.2" text-anchor="middle" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="19" font-weight="bold" fill="#0e8a78">$13.44</text>
+<text x="1182.5" y="660.2" text-anchor="middle" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="19" font-weight="bold" fill="#b9781f">$3.40</text>
+<text x="1182.5" y="810" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', ui-serif, serif" font-size="26" fill="#0a1414">Function localization</text>
+<text x="1182.5" y="838" text-anchor="middle" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="18" fill="#4a6560">n=1</text>
+<text x="110" y="876" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="16" fill="#4a6560">2 task families · fixed order, same 3 tasks grouped identically for both models · lines are a visual guide across categories, not a continuous trend</text>
+</svg>

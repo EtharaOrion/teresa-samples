@@ -1,0 +1,230 @@
+{
+  "instance_id": "dc51ee50-0468-41e6-9d58-3aab71e222f8",
+  "reward": 0.5249,
+  "passed": false,
+  "dimensions": {
+    "pytest": 0.2581,
+    "rubric": 0.7917
+  },
+  "criteria": [
+    {
+      "name": "deterministic_tests",
+      "value": 0.2581,
+      "weight": 1.0,
+      "kind": "pytest",
+      "detail": {
+        "returncode": 1,
+        "weighted": true,
+        "score": 0.2581,
+        "tests": {
+          "test_names_the_query_client_file_path": {
+            "status": "PASSED",
+            "weight": 3.0,
+            "earned": 3.0
+          },
+          "test_binds_the_request_executor_to_the_decode_it_performs": {
+            "status": "PASSED",
+            "weight": 5.0,
+            "earned": 5.0
+          },
+          "test_binds_the_destination_struct_to_its_bare_fields": {
+            "status": "FAILED",
+            "weight": 5.0,
+            "earned": 0.0
+          },
+          "test_binds_the_query_text_to_the_columns_it_fixes": {
+            "status": "FAILED",
+            "weight": 5.0,
+            "earned": 0.0
+          },
+          "test_binds_the_tag_parser_to_its_silent_empty_return": {
+            "status": "FAILED",
+            "weight": 5.0,
+            "earned": 0.0
+          },
+          "test_binds_the_cache_to_the_staleness_it_causes": {
+            "status": "FAILED",
+            "weight": 5.0,
+            "earned": 0.0
+          },
+          "test_read_only_respected": {
+            "status": "PASSED",
+            "weight": 3.0,
+            "earned": 3.0
+          },
+          "test_modified_code_penalty": {
+            "status": "FAILED",
+            "weight": -5.0,
+            "earned": 0.0
+          },
+          "test_penalizes_subscription_scope_as_cause": {
+            "status": "FAILED",
+            "weight": -1.0,
+            "earned": 0.0
+          },
+          "test_penalizes_names_collector_source_as_binding_hinge": {
+            "status": "PASSED",
+            "weight": -3.0,
+            "earned": -3.0
+          },
+          "test_penalizes_cluster_discovery_poller_absent_file": {
+            "status": "FAILED",
+            "weight": -3.0,
+            "earned": 0.0
+          }
+        },
+        "tail": "ter_discovery_poller',), ('(hinge|binds?|binding|source|cause|reason|responsible|explanation|is where|coupling|resolves? the binding|holds? the (binding|hinge|bug))',), ('\\\\bnot\\\\b', '\\\\bdoes not exist\\\\b', '\\\\babsent\\\\b', '\\\\bafter[- ]state\\\\b', '\\\\bpost[- ]?refactor\\\\b', '\\\\bafter the fix\\\\b', '\\\\badded by\\\\b', '\\\\bintroduc\\\\w*', '\\\\bnew\\\\b', '\\\\badjacent\\\\b', '\\\\bdoes \\\\*\\\\*not\\\\*\\\\* exist\\\\b'))\n>       assert guilty\nE       assert False\n\ntest_output.py:225: AssertionError\n=========================== short test summary info ============================\nFAILED test_output.py::test_binds_the_destination_struct_to_its_bare_fields\nFAILED test_output.py::test_binds_the_query_text_to_the_columns_it_fixes - As...\nFAILED test_output.py::test_binds_the_tag_parser_to_its_silent_empty_return\nFAILED test_output.py::test_binds_the_cache_to_the_staleness_it_causes - Asse...\nFAILED test_output.py::test_modified_code_penalty - AssertionError: no file w...\nFAILED test_output.py::test_penalizes_subscription_scope_as_cause - assert False\nFAILED test_output.py::test_penalizes_cluster_discovery_poller_absent_file - ...\n========================= 7 failed, 4 passed in 0.10s ==========================\n"
+      }
+    },
+    {
+      "name": "rubric",
+      "value": 0.7917,
+      "weight": 24.0,
+      "kind": "rubric",
+      "detail": {
+        "criteria": [
+          {
+            "name": "r1",
+            "criterion": "The response explains that mapstructure pairs query columns with Go field names case-insensitively.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 5.0,
+            "met": true,
+            "reasoning": "The response explicitly says mapstructure binds KQL columns to Go identifiers using case-insensitive field-name matching, including `subscriptionId` to `SubscriptionId`."
+          },
+          {
+            "name": "r2",
+            "criterion": "The response reports that a mismatched column leaves its destination field sitting at the zero value.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 3.0,
+            "met": true,
+            "reasoning": "It states that when a query column is renamed or unmatched, the corresponding destination field retains its zero value, with examples such as an empty region and zero Count."
+          },
+          {
+            "name": "r3",
+            "criterion": "The response reports that mapstructure.Decode returns a nil error for a result whose column names diverge from the field names.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 3.0,
+            "met": true,
+            "reasoning": "It reports that unmatched columns are skipped and decode still succeeds, which conveys that `mapstructure.Decode` returns no error despite divergent names."
+          },
+          {
+            "name": "r4",
+            "criterion": "The response identifies the any-typed Output on ResourceGraphRequest as the reason the pairing escapes compile-time checking.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 3.0,
+            "met": false,
+            "reasoning": "The response shows `Output: &publicIPs` being passed through `ResourceGraphRequest`, but it never identifies the request field's `any` type as the specific reason the query/output pairing escapes compile-time checking."
+          },
+          {
+            "name": "r5",
+            "criterion": "The response reports that the collector's guard fires solely on a returned error.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 3.0,
+            "met": true,
+            "reasoning": "It explains that the failure path increments the error counter and returns on an error, while a successful decode with mismatched names bypasses that handling, conveying that the guard depends solely on a returned error."
+          },
+          {
+            "name": "r6",
+            "criterion": "The response reports that an emptied tag value drops the affected row out of the published series entirely.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 1.0,
+            "met": false,
+            "reasoning": "The response does not report that an emptied `IpTagsString` yields an empty slice, zero loop iterations, and no published row. Instead, it incorrectly claims empty tag strings produce a `not-set` sentinel series."
+          },
+          {
+            "name": "r7",
+            "criterion": "The response reports that IPTag is bound through declared json tags, the opposite convention inside the same file.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 1.0,
+            "met": true,
+            "reasoning": "It explicitly identifies `IPTag` as using declared `json` tags (`ipTagType` and `tag`) and contrasts that tagged JSON binding with the outer untagged mapstructure binding in the same file."
+          },
+          {
+            "name": "r8",
+            "criterion": "The response reports that the gauge holds its last good value before disappearing from the scrape.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 1.0,
+            "met": true,
+            "reasoning": "It clearly states that the last good cached gauge value continues to be published until TTL expiry, after which the series vanishes and Prometheus observes its disappearance."
+          },
+          {
+            "name": "r9",
+            "criterion": "The agent read the PublicIPAddress declaration before naming the binding point.",
+            "type": "agent behavior",
+            "check": "trajectory",
+            "weight": 3.0,
+            "met": true,
+            "reasoning": "The trajectory shows the agent reading `service_tag_usage.go`, including the `PublicIPAddress` declaration, in action/observation 22\u201323 before opening and identifying `ExecuteConvertRequest` and `mapstructure.Decode` as the binding point in action/observation 24\u201325 and later in the final answer."
+          },
+          {
+            "name": "r10",
+            "criterion": "The agent opened tooling/metricscache/cache.go during its trace of the cached metric path.",
+            "type": "agent behavior",
+            "check": "trajectory",
+            "weight": 1.0,
+            "met": true,
+            "reasoning": "The agent explicitly opened and read `tooling/metricscache/cache.go` during the investigation (action/observation 22\u201323), then revisited its `Set` and `GetAll` implementation multiple times while tracing stale cached metric publication."
+          },
+          {
+            "name": "r11",
+            "criterion": "The response attributes the emptied series to the subscription scope handed to the query client.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": -1.0,
+            "met": true,
+            "reasoning": "The response explicitly offers a subscription being removed from query scope as a cause of rows no longer arriving and the corresponding series eventually disappearing, so this penalty applies."
+          },
+          {
+            "name": "r12",
+            "criterion": "The response names the collector source holding the query text as the place where the binding is resolved.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": -3.0,
+            "met": false,
+            "reasoning": "Although it names the collector file containing the query text, it correctly localizes the actual binding to `mapstructure.Decode` in `ExecuteConvertRequest`; it does not claim that the collector's query-text location resolves the binding."
+          },
+          {
+            "name": "r13",
+            "criterion": "The response cites a file path, function, or struct field that is absent from the tree at this commit.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": -3.0,
+            "met": false,
+            "reasoning": "There is no clear evidence that any cited path, function, or struct field is absent from the repository at this commit."
+          },
+          {
+            "name": "r14",
+            "criterion": "The response offers general advice about tagging Go structs drawn from priors alone.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": -5.0,
+            "met": false,
+            "reasoning": "The response investigates concrete repository code and does not offer generic struct-tagging advice drawn only from prior knowledge."
+          }
+        ],
+        "dimension_divergence": {
+          "pytest": 0.2581,
+          "rubric": 0.7917,
+          "gap": 0.5336
+        }
+      }
+    }
+  ],
+  "violations": [],
+  "gate_violations": [],
+  "judge_usage": {
+    "n_calls": 6,
+    "input_tokens": 148710,
+    "output_tokens": 5284,
+    "cache_read_tokens": 91776,
+    "cost_usd": 0.370126
+  }
+}

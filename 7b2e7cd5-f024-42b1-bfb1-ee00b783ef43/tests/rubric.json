@@ -1,0 +1,308 @@
+[
+  {
+    "number": "R1",
+    "criterion": "The response remarks on the leading underscore that keeps _get_imr_duration private to its module.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "minor",
+    "score": 1
+  },
+  {
+    "number": "R2",
+    "criterion": "The response gives 1.1 as the factor applied to the LALSimulation duration.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "minor",
+    "score": 1
+  },
+  {
+    "number": "R3",
+    "criterion": "The response states that the public name get_imr_duration is built by passing _get_imr_duration through numpy.vectorize.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "minor",
+    "score": 1
+  },
+  {
+    "number": "R4",
+    "criterion": "The response attributes the identical padding factor across every admitted approximant to the multiplication sitting after _get_imr_duration's branch chain closes.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R5",
+    "criterion": "The response follows the padded duration from _get_imr_duration as far as the per-approximant length stubs.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "minor",
+    "score": 1
+  },
+  {
+    "number": "R6",
+    "criterion": "The response states that the numpy.vectorize line in pycbc/pnutils.py is the sole mention of _get_imr_duration outside its own definition.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R7",
+    "criterion": "The response reports that _get_imr_duration casts each numeric argument to a scalar float on entry.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R8",
+    "criterion": "The response characterises the approximant selection inside _get_imr_duration as a chain of literal string equality tests.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R9",
+    "criterion": "The response finds the v5 branch of _get_imr_duration admitting the suffixed spelling SEOBNRv5_ROM.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "minor",
+    "score": 1
+  },
+  {
+    "number": "R10",
+    "criterion": "The response shows get_inspiral_tf reaching SimIMRSEOBNRv5ROMTimeOfFrequency under the bare key SEOBNRv5.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": 5
+  },
+  {
+    "number": "R11",
+    "criterion": "The response picks out the family prefix normalisation pycbc/pnutils.py already performs on an approximant name.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": 5
+  },
+  {
+    "number": "R12",
+    "criterion": "The response states that seobnrv4_length_in_time substitutes the literal string SEOBNRv4 for whatever spelling its caller asked for.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": 5
+  },
+  {
+    "number": "R13",
+    "criterion": "The response explains that a bank lacking an approximant column leaves the default approximant parameter of _get_imr_duration in force.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R14",
+    "criterion": "The response reports that pycbc/events/triggers.py fills in a spelling only where the caller left the approximant unset.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R15",
+    "criterion": "The response reports that one bank row carrying the refused spelling costs the caller the entire duration column.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R16",
+    "criterion": "The response shows background_bin_from_string refusing a duration bin type whose approximant _get_imr_duration can compute.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R17",
+    "criterion": "The response attributes the longer durations of higher-mode approximants to get_hm_length_in_time scaling f_lower by two over the maximum mode number.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R18",
+    "criterion": "The response reports that get_imr_length hands back the duration value it receives in unaltered form.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": 5
+  },
+  {
+    "number": "R19",
+    "criterion": "The response points out that get_imr_length forwards the approximant string it is handed straight to the duration helper.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R20",
+    "criterion": "The response clears get_imr_length of running an approximant name test of its own.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R21",
+    "criterion": "The response explains that a hunt for the failing spelling SEOBNRv4_ROM leads away from the routine that turns that spelling away.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R22",
+    "criterion": "The response reports that get_imr_length takes the same parameters as the duration helper it calls.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R23",
+    "criterion": "The agent opened pycbc/pnutils.py before settling on a conclusion.",
+    "is_positive": true,
+    "type": "agent behavior",
+    "evaluation_target": "trajectory",
+    "importance": "minor",
+    "score": 1
+  },
+  {
+    "number": "R24",
+    "criterion": "The agent opened pycbc/tmpltbank/bank_conversions.py during its trace of the bank route.",
+    "is_positive": true,
+    "type": "agent behavior",
+    "evaluation_target": "trajectory",
+    "importance": "minor",
+    "score": 1
+  },
+  {
+    "number": "R25",
+    "criterion": "The agent opened pycbc/events/coinc.py during its work on the binning refusals.",
+    "is_positive": true,
+    "type": "agent behavior",
+    "evaluation_target": "trajectory",
+    "importance": "minor",
+    "score": 1
+  },
+  {
+    "number": "R26",
+    "criterion": "The agent opened pycbc/events/triggers.py to see how that caller supplies an approximant.",
+    "is_positive": true,
+    "type": "agent behavior",
+    "evaluation_target": "trajectory",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R27",
+    "criterion": "The agent read the approximant-to-routine mapping that get_inspiral_tf builds in pycbc/pnutils.py.",
+    "is_positive": true,
+    "type": "agent behavior",
+    "evaluation_target": "trajectory",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R28",
+    "criterion": "The response names get_imr_length as the one function at the bottom of the reported duration behaviour.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": -5
+  },
+  {
+    "number": "R29",
+    "criterion": "The response attributes the constant proportional inflation seen across every family to get_hm_length_in_time.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": -3
+  },
+  {
+    "number": "R30",
+    "criterion": "The response claims lalsimulation refuses the ROM spelling of the approximant.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": -3
+  },
+  {
+    "number": "R31",
+    "criterion": "The response treats numpy.vectorize as the source of the altered duration values.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "minor",
+    "score": -1
+  },
+  {
+    "number": "R32",
+    "criterion": "The response cites a file path, function or module attribute absent from the repository at this commit.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": -3
+  },
+  {
+    "number": "R33",
+    "criterion": "The response offers a general account of waveform duration estimation in place of tracing this repository's code.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": -3
+  },
+  {
+    "number": "R34",
+    "criterion": "The response names get_freq as the routine that turns away the refused duration spelling.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "minor",
+    "score": -1
+  }
+]

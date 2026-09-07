@@ -1,0 +1,20 @@
+{
+  "test_identifies_pnutils_file": 1,
+  "test_binds_padding_factor_to_gold_helper": 3,
+  "test_binds_bank_forwarding_to_gold_helper": 5,
+  "test_binds_duration_map_to_rom_spelling": 5,
+  "test_binds_peak_bin_refusal_to_listed_cutoff": 5,
+  "test_v4_gate_turns_away_rom_spelling": 5,
+  "test_registration_key_binds_stub_to_rom_spelling": 5,
+  "test_raise_precedes_any_library_call": 5,
+  "test_getattr_resolves_the_cutoff_name": 5,
+  "test_refused_spelling_absent_from_pnutils": 5,
+  "test_alias_evaluates_one_template_at_a_time": 5,
+  "test_gold_helper_held_at_fault": 3,
+  "test_gold_helper_is_origin_of_the_inflation": 3,
+  "test_read_only_respected": 1,
+  "test_modified_code_penalty": -5,
+  "test_blames_hm_length_for_inflation_penalty": -1,
+  "test_blames_numpy_vectorize_penalty": -1,
+  "test_blames_get_freq_for_refusal_penalty": -1
+}

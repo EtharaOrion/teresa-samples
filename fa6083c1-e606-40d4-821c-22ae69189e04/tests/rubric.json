@@ -1,0 +1,236 @@
+[
+  {
+    "number": "R1",
+    "criterion": "The response reports decodeValues as calling six in-repository functions across two files.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": 5
+  },
+  {
+    "number": "R2",
+    "criterion": "The response confines the reported callees to the iotdb-core datanode module.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R3",
+    "criterion": "The response reports that uncompress is reached before any column work begins.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R4",
+    "criterion": "The response reports that decodeColumn is declared below decodeValues in TabletDecoder.java.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": 5
+  },
+  {
+    "number": "R5",
+    "criterion": "The response reports that getInstance is invoked again for each recorder call.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R6",
+    "criterion": "The response reports that the three timer recorders are declared in RPCServiceThriftHandlerMetrics.java.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R7",
+    "criterion": "The response pairs each reported callee with the file that declares it.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": 5
+  },
+  {
+    "number": "R8",
+    "criterion": "The response reports that org.apache.tsfile source is absent from this checkout.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": 5
+  },
+  {
+    "number": "R9",
+    "criterion": "The response observes that the org.apache.tsfile prefix sits beside org.apache.iotdb in the import block.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R10",
+    "criterion": "The response excludes the Object array construction as an allocation.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "minor",
+    "score": 1
+  },
+  {
+    "number": "R11",
+    "criterion": "The response states that decodeTime shares uncompress with decodeValues.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R12",
+    "criterion": "The response explains that decodeTime performs the same job for the timestamp column.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": 5
+  },
+  {
+    "number": "R13",
+    "criterion": "The response reports that decodeColumn reads the encoding stored one position beyond its own index.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R14",
+    "criterion": "The agent opened TabletDecoder.java to read the body of decodeValues.",
+    "is_positive": true,
+    "type": "agent behavior",
+    "evaluation_target": "trajectory",
+    "importance": "critically_important",
+    "score": 5
+  },
+  {
+    "number": "R15",
+    "criterion": "The agent compared decodeValues against decodeTime in TabletDecoder.java.",
+    "is_positive": true,
+    "type": "agent behavior",
+    "evaluation_target": "trajectory",
+    "importance": "critically_important",
+    "score": 5
+  },
+  {
+    "number": "R16",
+    "criterion": "The agent searched the repository for the declaration site of RPCServiceThriftHandlerMetrics.",
+    "is_positive": true,
+    "type": "agent behavior",
+    "evaluation_target": "trajectory",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R17",
+    "criterion": "The agent inspected the import block of TabletDecoder.java to settle which packages the project owns.",
+    "is_positive": true,
+    "type": "agent behavior",
+    "evaluation_target": "trajectory",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R18",
+    "criterion": "The agent opened RPCServiceThriftHandlerMetrics.java to confirm where each recorder is declared.",
+    "is_positive": true,
+    "type": "agent behavior",
+    "evaluation_target": "trajectory",
+    "importance": "minor",
+    "score": 1
+  },
+  {
+    "number": "R19",
+    "criterion": "The response reports the callee set of decodeTime in place of the one for decodeValues.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": -5
+  },
+  {
+    "number": "R20",
+    "criterion": "The response counts Decoder.getDecoderByType among the in-repository callees.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": -5
+  },
+  {
+    "number": "R21",
+    "criterion": "The response reports decodeValues as writing the decoded columns back into the buffer.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": -3
+  },
+  {
+    "number": "R22",
+    "criterion": "The response reports uncompress as a method the metrics class declares.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": -3
+  },
+  {
+    "number": "R23",
+    "criterion": "The response reports the System.nanoTime calls as belonging to the metrics class.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": -1
+  },
+  {
+    "number": "R24",
+    "criterion": "The response supports its list by citing the project's file format documentation.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "minor",
+    "score": -1
+  },
+  {
+    "number": "R25",
+    "criterion": "The response cites a source file that the repository lacks at this commit.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "minor",
+    "score": -1
+  },
+  {
+    "number": "R26",
+    "criterion": "The agent wrote to a file inside the repository.",
+    "is_positive": false,
+    "type": "agent behavior",
+    "evaluation_target": "trajectory",
+    "importance": "critically_important",
+    "score": -5
+  }
+]

@@ -1,0 +1,48 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Binary pass rate by task family">
+<defs>
+<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#050c0c"/><stop offset="60%" stop-color="#0a1e1c"/><stop offset="100%" stop-color="#071313"/></linearGradient>
+<pattern id="hatch" width="10" height="10" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#e2ac52"/><line x1="0" y1="0" x2="0" y2="10" stroke="#050c0c" stroke-opacity="0.35" stroke-width="4"/></pattern>
+<filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="6"/></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<text x="110" y="66" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', ui-serif, serif" font-size="40" fill="#eef2ea">Binary pass rate by task family</text>
+<text x="110" y="100" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="20" letter-spacing="0.5" fill="#9fc4bc">share of 8 runs with reward ≥ 0.6, mean of task rates within each family</text>
+<line x1="1180" y1="47" x2="1216" y2="47" stroke="#35d0ba" stroke-width="4" stroke-linecap="round"/>
+<circle cx="1198" cy="47" r="6.5" fill="#35d0ba" stroke="#0f2723" stroke-width="2"/>
+<text x="1230" y="56" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="20" fill="#eef2ea">opus-5</text>
+<line x1="1356" y1="47" x2="1392" y2="47" stroke="#e2ac52" stroke-width="3.5" stroke-dasharray="9 7" stroke-linecap="round"/>
+<polygon points="1374,40 1381,47 1374,54 1367,47" fill="url(#hatch)" stroke="#e2ac52" stroke-width="1.5"/>
+<text x="1406" y="56" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="20" fill="#eef2ea">glm-5.3</text>
+<line x1="110" y1="770.0" x2="1540" y2="770.0" stroke="rgba(143,227,212,0.16)" stroke-width="1"/>
+<text x="94" y="777.0" text-anchor="end" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="19" fill="#9fc4bc">0%</text>
+<line x1="110" y1="615.0" x2="1540" y2="615.0" stroke="rgba(143,227,212,0.16)" stroke-width="1"/>
+<text x="94" y="622.0" text-anchor="end" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="19" fill="#9fc4bc">5%</text>
+<line x1="110" y1="460.0" x2="1540" y2="460.0" stroke="rgba(143,227,212,0.16)" stroke-width="1"/>
+<text x="94" y="467.0" text-anchor="end" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="19" fill="#9fc4bc">10%</text>
+<line x1="110" y1="305.0" x2="1540" y2="305.0" stroke="rgba(143,227,212,0.16)" stroke-width="1"/>
+<text x="94" y="312.0" text-anchor="end" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="19" fill="#9fc4bc">15%</text>
+<line x1="110" y1="150.0" x2="1540" y2="150.0" stroke="rgba(143,227,212,0.16)" stroke-width="1"/>
+<text x="94" y="157.0" text-anchor="end" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="19" fill="#9fc4bc">20%</text>
+<line x1="110" y1="770.0" x2="1540" y2="770.0" stroke="rgba(143,227,212,0.4)" stroke-width="2"/>
+<line x1="467.5" y1="150" x2="467.5" y2="770" stroke="rgba(143,227,212,0.16)" stroke-width="1" stroke-dasharray="2 5"/>
+<line x1="1182.5" y1="150" x2="1182.5" y2="770" stroke="rgba(143,227,212,0.16)" stroke-width="1" stroke-dasharray="2 5"/>
+<polyline points="467.5,382.5 1182.5,382.5" fill="none" stroke="#e2ac52" stroke-width="3.5" stroke-dasharray="9 7" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="467.5,770.0 1182.5,382.5" fill="none" stroke="#35d0ba" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="467.5,372.5 477.5,382.5 467.5,392.5 457.5,382.5" fill="#e2ac52" opacity="0.28" filter="url(#glow)"/>
+<polygon points="467.5,372.5 477.5,382.5 467.5,392.5 457.5,382.5" fill="url(#hatch)" stroke="#e2ac52" stroke-width="1.5"/>
+<circle cx="467.5" cy="770.0" r="9" fill="#35d0ba" opacity="0.28" filter="url(#glow)"/>
+<circle cx="467.5" cy="770.0" r="8" fill="#35d0ba" stroke="#0f2723" stroke-width="3"/>
+<text x="453.5" y="752.0" text-anchor="end" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="19" font-weight="bold" fill="#35d0ba">0.00%</text>
+<text x="467.5" y="364.5" text-anchor="middle" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="19" font-weight="bold" fill="#e2ac52">12.50%</text>
+<text x="467.5" y="810" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', ui-serif, serif" font-size="26" fill="#eef2ea">Dependency search</text>
+<text x="467.5" y="838" text-anchor="middle" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="18" fill="#9fc4bc">n=2</text>
+<polygon points="1182.5,372.5 1192.5,382.5 1182.5,392.5 1172.5,382.5" fill="#e2ac52" opacity="0.28" filter="url(#glow)"/>
+<polygon points="1182.5,372.5 1192.5,382.5 1182.5,392.5 1172.5,382.5" fill="url(#hatch)" stroke="#e2ac52" stroke-width="1.5"/>
+<circle cx="1182.5" cy="382.5" r="9" fill="#35d0ba" opacity="0.28" filter="url(#glow)"/>
+<circle cx="1182.5" cy="382.5" r="8" fill="#35d0ba" stroke="#0f2723" stroke-width="3"/>
+<text x="1196.5" y="342.5" text-anchor="start" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="19" font-weight="bold" fill="#35d0ba">12.50%</text>
+<text x="1196.5" y="368.5" text-anchor="start" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="19" font-weight="bold" fill="#e2ac52">12.50%</text>
+<text x="1182.5" y="810" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', ui-serif, serif" font-size="26" fill="#eef2ea">Function localization</text>
+<text x="1182.5" y="838" text-anchor="middle" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="18" fill="#9fc4bc">n=1</text>
+<text x="110" y="876" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="16" fill="#9fc4bc">2 task families · fixed order, same 3 tasks grouped identically for both models · lines are a visual guide across categories, not a continuous trend</text>
+</svg>

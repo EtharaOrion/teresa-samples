@@ -1,0 +1,745 @@
+{
+  "accumulated_cost": 1.3239978,
+  "accumulated_token_usage": {
+    "model": "default",
+    "prompt_tokens": 814313,
+    "completion_tokens": 41809,
+    "cache_read_tokens": 745024,
+    "cache_write_tokens": 68096,
+    "context_window": 0,
+    "per_turn_token": 26772,
+    "response_id": ""
+  },
+  "costs": [
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.0082924,
+      "timestamp": 1788597010.2134268
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.0079002,
+      "timestamp": 1788597032.7512095
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.0080168,
+      "timestamp": 1788597039.1293914
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.010528599999999999,
+      "timestamp": 1788597060.8351421
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.0128358,
+      "timestamp": 1788597070.142499
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.0144096,
+      "timestamp": 1788597095.376905
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.0193578,
+      "timestamp": 1788597120.1906219
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.0196228,
+      "timestamp": 1788597142.0775263
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.0150746,
+      "timestamp": 1788597172.141089
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.0134966,
+      "timestamp": 1788597178.2426736
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.024989599999999997,
+      "timestamp": 1788597198.5925086
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.025323799999999997,
+      "timestamp": 1788597201.4416873
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.0291154,
+      "timestamp": 1788597208.2463555
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.0354716,
+      "timestamp": 1788597229.6380093
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.034086399999999996,
+      "timestamp": 1788597242.600157
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.0424828,
+      "timestamp": 1788597269.3553667
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.04342119999999999,
+      "timestamp": 1788597301.1329896
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.019478600000000002,
+      "timestamp": 1788597306.6357236
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.0450648,
+      "timestamp": 1788597331.2619
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.0288172,
+      "timestamp": 1788597351.8958197
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.053734199999999996,
+      "timestamp": 1788597396.8239594
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.0509076,
+      "timestamp": 1788597419.4509408
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.047881599999999996,
+      "timestamp": 1788597425.0763004
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.0528198,
+      "timestamp": 1788597448.3903012
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.060523,
+      "timestamp": 1788597502.0254366
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.0605024,
+      "timestamp": 1788597535.9177282
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.0292504,
+      "timestamp": 1788597549.1634243
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.0656552,
+      "timestamp": 1788597604.101313
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.059142,
+      "timestamp": 1788597655.2172675
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.039841600000000005,
+      "timestamp": 1788597696.4374764
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.06917279999999999,
+      "timestamp": 1788597742.5620613
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.032198,
+      "timestamp": 1788597746.84084
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.077045,
+      "timestamp": 1788597814.0525136
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.04226,
+      "timestamp": 1788597847.1448421
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.08000879999999999,
+      "timestamp": 1788597918.901151
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "cost": 0.0452688,
+      "timestamp": 1788597963.4131749
+    }
+  ],
+  "response_latencies": [
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 7.66386079788208,
+      "response_id": "chatcmpl-2f63a4b0-a5e2-408c-bc1d-8a627a5dcbca"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 6.100603103637695,
+      "response_id": "chatcmpl-844ff486-63a7-4ffb-8937-5de0c5c2caee"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 5.457697629928589,
+      "response_id": "chatcmpl-91c39c59-b0a6-43f2-a4e4-0117aee05ac9"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 7.737894535064697,
+      "response_id": "chatcmpl-d6f2d9f6-dc03-4aaa-ada1-e4f4d0943077"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 8.650882959365845,
+      "response_id": "chatcmpl-1b778921-8864-4b24-bce6-9e6672682a96"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 10.329578399658203,
+      "response_id": "chatcmpl-537ca59f-d7ec-4d71-b0ed-f3ce77feafec"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 10.120445728302002,
+      "response_id": "chatcmpl-337039d4-a739-40c4-b5ba-33516e1d1c42"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 21.19586205482483,
+      "response_id": "chatcmpl-50f3bc87-88d7-4981-bec4-c3211aa23a1a"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 14.580763339996338,
+      "response_id": "chatcmpl-78177b27-3301-4511-a1b2-5db5ef93023a"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 5.421429872512817,
+      "response_id": "chatcmpl-2eb6b298-4708-4fc2-80c5-488cb097246c"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 5.095012664794922,
+      "response_id": "chatcmpl-1bc4750e-0664-4e53-96c3-9cf9a39baf5b"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 1.9913840293884277,
+      "response_id": "chatcmpl-278bed1e-01b7-4486-bbbd-f0601c00b942"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 6.708406925201416,
+      "response_id": "chatcmpl-600da687-5361-4478-8aaf-24d6af1ab924"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 21.29037570953369,
+      "response_id": "chatcmpl-820e34ae-e2ce-4b99-a249-d598e95dfcbd"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 12.245471239089966,
+      "response_id": "chatcmpl-c95798b6-6c43-4b5f-8264-6905c81cc05d"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 26.030264854431152,
+      "response_id": "chatcmpl-1f92461a-6d86-48fe-9095-b4dec0ab30cb"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 31.05141592025757,
+      "response_id": "chatcmpl-e105520a-445d-4c7a-aa2b-0b1d58640e53"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 3.5115089416503906,
+      "response_id": "chatcmpl-1281c4d6-538c-4480-96d1-9f65de0213d5"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 23.893606424331665,
+      "response_id": "chatcmpl-624ff840-8afc-4178-8db2-30a514f09b6a"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 19.89727759361267,
+      "response_id": "chatcmpl-120fb423-4baa-4a9d-9266-ac1db34bb3a8"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 44.18001103401184,
+      "response_id": "chatcmpl-d0afbf65-eac7-4d41-84ae-9780d47a51b2"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 21.872822999954224,
+      "response_id": "chatcmpl-34302233-8301-43da-ba12-20866c8b2a58"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 4.8658599853515625,
+      "response_id": "chatcmpl-6a18c4eb-46b2-4adc-9c90-50d75008685a"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 22.549636840820312,
+      "response_id": "chatcmpl-dde797c4-ede4-4914-b9b6-fa7c13759f26"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 52.86338424682617,
+      "response_id": "chatcmpl-49b21627-1d60-44ea-93e6-5a2eabd81f49"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 33.11428189277649,
+      "response_id": "chatcmpl-1ce45ae9-f952-4959-a084-1ec0b7c455c0"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 11.499559879302979,
+      "response_id": "chatcmpl-8f4d7f0e-583a-4dbc-86ce-35dc14cd5cc6"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 54.76518511772156,
+      "response_id": "chatcmpl-ae24cadc-70d7-4578-b32c-88ab7105b218"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 35.20288300514221,
+      "response_id": "chatcmpl-8c6379d4-bf13-416e-a145-c9f54bc764c4"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 14.863699913024902,
+      "response_id": "chatcmpl-f767b035-76dd-4ecc-90be-ab601a69d26a"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 40.18230700492859,
+      "response_id": "chatcmpl-6546da3b-a158-4d96-a047-fb138b4f781e"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 45.325722455978394,
+      "response_id": "chatcmpl-050da8bd-a971-420a-bf0c-406fef292238"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 3.480034589767456,
+      "response_id": "chatcmpl-fd76536c-3af3-4c1e-b7a0-cebef555b9e0"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 66.40187001228333,
+      "response_id": "chatcmpl-5d6e20df-e787-4a37-b8ef-666a588805fc"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 32.56382632255554,
+      "response_id": "chatcmpl-15522396-f184-4f7b-9df4-82b8b6f6de26"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 70.94477725028992,
+      "response_id": "chatcmpl-ba7eb20f-1eec-4814-89c7-95851d815315"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "latency": 44.232683181762695,
+      "response_id": "chatcmpl-f3e899f8-9bae-4949-92ac-bf054ee6d56e"
+    }
+  ],
+  "token_usages": [
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 4842,
+      "completion_tokens": 344,
+      "cache_read_tokens": 4800,
+      "cache_write_tokens": 0,
+      "context_window": 0,
+      "per_turn_token": 5186,
+      "response_id": "chatcmpl-2f63a4b0-a5e2-408c-bc1d-8a627a5dcbca"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 5137,
+      "completion_tokens": 161,
+      "cache_read_tokens": 4864,
+      "cache_write_tokens": 256,
+      "context_window": 0,
+      "per_turn_token": 5298,
+      "response_id": "chatcmpl-844ff486-63a7-4ffb-8937-5de0c5c2caee"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 4906,
+      "completion_tokens": 261,
+      "cache_read_tokens": 4160,
+      "cache_write_tokens": 704,
+      "context_window": 0,
+      "per_turn_token": 5167,
+      "response_id": "chatcmpl-91c39c59-b0a6-43f2-a4e4-0117aee05ac9"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 7005,
+      "completion_tokens": 164,
+      "cache_read_tokens": 5120,
+      "cache_write_tokens": 1856,
+      "context_window": 0,
+      "per_turn_token": 7169,
+      "response_id": "chatcmpl-d6f2d9f6-dc03-4aaa-ada1-e4f4d0943077"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 8037,
+      "completion_tokens": 360,
+      "cache_read_tokens": 4864,
+      "cache_write_tokens": 3136,
+      "context_window": 0,
+      "per_turn_token": 8397,
+      "response_id": "chatcmpl-1b778921-8864-4b24-bce6-9e6672682a96"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 9444,
+      "completion_tokens": 270,
+      "cache_read_tokens": 6976,
+      "cache_write_tokens": 2432,
+      "context_window": 0,
+      "per_turn_token": 9714,
+      "response_id": "chatcmpl-537ca59f-d7ec-4d71-b0ed-f3ce77feafec"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 12705,
+      "completion_tokens": 357,
+      "cache_read_tokens": 9408,
+      "cache_write_tokens": 3264,
+      "context_window": 0,
+      "per_turn_token": 13062,
+      "response_id": "chatcmpl-337039d4-a739-40c4-b5ba-33516e1d1c42"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 13306,
+      "completion_tokens": 226,
+      "cache_read_tokens": 12672,
+      "cache_write_tokens": 576,
+      "context_window": 0,
+      "per_turn_token": 13532,
+      "response_id": "chatcmpl-50f3bc87-88d7-4981-bec4-c3211aa23a1a"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 8159,
+      "completion_tokens": 830,
+      "cache_read_tokens": 4928,
+      "cache_write_tokens": 3200,
+      "context_window": 0,
+      "per_turn_token": 8989,
+      "response_id": "chatcmpl-78177b27-3301-4511-a1b2-5db5ef93023a"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 8663,
+      "completion_tokens": 311,
+      "cache_read_tokens": 8128,
+      "cache_write_tokens": 512,
+      "context_window": 0,
+      "per_turn_token": 8974,
+      "response_id": "chatcmpl-2eb6b298-4708-4fc2-80c5-488cb097246c"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 17262,
+      "completion_tokens": 187,
+      "cache_read_tokens": 13248,
+      "cache_write_tokens": 3968,
+      "context_window": 0,
+      "per_turn_token": 17449,
+      "response_id": "chatcmpl-1bc4750e-0664-4e53-96c3-9cf9a39baf5b"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 17815,
+      "completion_tokens": 87,
+      "cache_read_tokens": 17216,
+      "cache_write_tokens": 576,
+      "context_window": 0,
+      "per_turn_token": 17902,
+      "response_id": "chatcmpl-278bed1e-01b7-4486-bbbd-f0601c00b942"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 19615,
+      "completion_tokens": 376,
+      "cache_read_tokens": 17792,
+      "cache_write_tokens": 1792,
+      "context_window": 0,
+      "per_turn_token": 19991,
+      "response_id": "chatcmpl-600da687-5361-4478-8aaf-24d6af1ab924"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 21446,
+      "completion_tokens": 1238,
+      "cache_read_tokens": 19584,
+      "cache_write_tokens": 1856,
+      "context_window": 0,
+      "per_turn_token": 22684,
+      "response_id": "chatcmpl-820e34ae-e2ce-4b99-a249-d598e95dfcbd"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 22270,
+      "completion_tokens": 661,
+      "cache_read_tokens": 21440,
+      "cache_write_tokens": 768,
+      "context_window": 0,
+      "per_turn_token": 22931,
+      "response_id": "chatcmpl-c95798b6-6c43-4b5f-8264-6905c81cc05d"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 25420,
+      "completion_tokens": 1567,
+      "cache_read_tokens": 22208,
+      "cache_write_tokens": 3200,
+      "context_window": 0,
+      "per_turn_token": 26987,
+      "response_id": "chatcmpl-1f92461a-6d86-48fe-9095-b4dec0ab30cb"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 26040,
+      "completion_tokens": 1583,
+      "cache_read_tokens": 25408,
+      "cache_write_tokens": 576,
+      "context_window": 0,
+      "per_turn_token": 27623,
+      "response_id": "chatcmpl-e105520a-445d-4c7a-aa2b-0b1d58640e53"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 13709,
+      "completion_tokens": 65,
+      "cache_read_tokens": 8640,
+      "cache_write_tokens": 5056,
+      "context_window": 0,
+      "per_turn_token": 13774,
+      "response_id": "chatcmpl-1281c4d6-538c-4480-96d1-9f65de0213d5"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 28050,
+      "completion_tokens": 1317,
+      "cache_read_tokens": 25984,
+      "cache_write_tokens": 2048,
+      "context_window": 0,
+      "per_turn_token": 29367,
+      "response_id": "chatcmpl-624ff840-8afc-4178-8db2-30a514f09b6a"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 16762,
+      "completion_tokens": 1216,
+      "cache_read_tokens": 13696,
+      "cache_write_tokens": 3008,
+      "context_window": 0,
+      "per_turn_token": 17978,
+      "response_id": "chatcmpl-120fb423-4baa-4a9d-9266-ac1db34bb3a8"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 31373,
+      "completion_tokens": 2230,
+      "cache_read_tokens": 28032,
+      "cache_write_tokens": 3328,
+      "context_window": 0,
+      "per_turn_token": 33603,
+      "response_id": "chatcmpl-d0afbf65-eac7-4d41-84ae-9780d47a51b2"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 32610,
+      "completion_tokens": 1194,
+      "cache_read_tokens": 31360,
+      "cache_write_tokens": 1216,
+      "context_window": 0,
+      "per_turn_token": 33804,
+      "response_id": "chatcmpl-34302233-8301-43da-ba12-20866c8b2a58"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 33516,
+      "completion_tokens": 218,
+      "cache_read_tokens": 32576,
+      "cache_write_tokens": 896,
+      "context_window": 0,
+      "per_turn_token": 33734,
+      "response_id": "chatcmpl-6a18c4eb-46b2-4adc-9c90-50d75008685a"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 34221,
+      "completion_tokens": 1116,
+      "cache_read_tokens": 33472,
+      "cache_write_tokens": 704,
+      "context_window": 0,
+      "per_turn_token": 35337,
+      "response_id": "chatcmpl-dde797c4-ede4-4914-b9b6-fa7c13759f26"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 36153,
+      "completion_tokens": 2252,
+      "cache_read_tokens": 34176,
+      "cache_write_tokens": 1920,
+      "context_window": 0,
+      "per_turn_token": 38405,
+      "response_id": "chatcmpl-49b21627-1d60-44ea-93e6-5a2eabd81f49"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 37188,
+      "completion_tokens": 1918,
+      "cache_read_tokens": 36096,
+      "cache_write_tokens": 1088,
+      "context_window": 0,
+      "per_turn_token": 39106,
+      "response_id": "chatcmpl-1ce45ae9-f952-4959-a084-1ec0b7c455c0"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 19790,
+      "completion_tokens": 351,
+      "cache_read_tokens": 13760,
+      "cache_write_tokens": 6016,
+      "context_window": 0,
+      "per_turn_token": 20141,
+      "response_id": "chatcmpl-8f4d7f0e-583a-4dbc-86ce-35dc14cd5cc6"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 39272,
+      "completion_tokens": 2426,
+      "cache_read_tokens": 37184,
+      "cache_write_tokens": 2048,
+      "context_window": 0,
+      "per_turn_token": 41698,
+      "response_id": "chatcmpl-ae24cadc-70d7-4578-b32c-88ab7105b218"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 39466,
+      "completion_tokens": 884,
+      "cache_read_tokens": 39232,
+      "cache_write_tokens": 192,
+      "context_window": 0,
+      "per_turn_token": 40350,
+      "response_id": "chatcmpl-f767b035-76dd-4ecc-90be-ab601a69d26a"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 21302,
+      "completion_tokens": 2277,
+      "cache_read_tokens": 19520,
+      "cache_write_tokens": 1728,
+      "context_window": 0,
+      "per_turn_token": 23579,
+      "response_id": "chatcmpl-6546da3b-a158-4d96-a047-fb138b4f781e"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 41244,
+      "completion_tokens": 2598,
+      "cache_read_tokens": 39424,
+      "cache_write_tokens": 1792,
+      "context_window": 0,
+      "per_turn_token": 43842,
+      "response_id": "chatcmpl-050da8bd-a971-420a-bf0c-406fef292238"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 22546,
+      "completion_tokens": 144,
+      "cache_read_tokens": 21248,
+      "cache_write_tokens": 1280,
+      "context_window": 0,
+      "per_turn_token": 22690,
+      "response_id": "chatcmpl-fd76536c-3af3-4c1e-b7a0-cebef555b9e0"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 42841,
+      "completion_tokens": 3879,
+      "cache_read_tokens": 41216,
+      "cache_write_tokens": 1600,
+      "context_window": 0,
+      "per_turn_token": 46720,
+      "response_id": "chatcmpl-5d6e20df-e787-4a37-b8ef-666a588805fc"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 23746,
+      "completion_tokens": 2049,
+      "cache_read_tokens": 21376,
+      "cache_write_tokens": 2368,
+      "context_window": 0,
+      "per_turn_token": 25795,
+      "response_id": "chatcmpl-15522396-f184-4f7b-9df4-82b8b6f6de26"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 44276,
+      "completion_tokens": 4096,
+      "cache_read_tokens": 42816,
+      "cache_write_tokens": 1408,
+      "context_window": 0,
+      "per_turn_token": 48372,
+      "response_id": "chatcmpl-ba7eb20f-1eec-4814-89c7-95851d815315"
+    },
+    {
+      "model": "anthropic/glm-5.3",
+      "prompt_tokens": 24176,
+      "completion_tokens": 2596,
+      "cache_read_tokens": 22400,
+      "cache_write_tokens": 1728,
+      "context_window": 0,
+      "per_turn_token": 26772,
+      "response_id": "chatcmpl-f3e899f8-9bae-4949-92ac-bf054ee6d56e"
+    }
+  ],
+  "condenser": []
+}

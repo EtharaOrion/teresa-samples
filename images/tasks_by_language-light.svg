@@ -1,0 +1,32 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Language coverage">
+<defs>
+<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#faf8f4"/><stop offset="60%" stop-color="#f3efe6"/><stop offset="100%" stop-color="#faf8f4"/></linearGradient>
+<pattern id="hatch" width="10" height="10" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#b9781f"/><line x1="0" y1="0" x2="0" y2="10" stroke="#ffffff" stroke-opacity="0.35" stroke-width="4"/></pattern>
+<filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="6"/></filter>
+</defs>
+<rect width="1600" height="1200" fill="url(#bg)"/>
+<text x="80" y="90" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', ui-serif, serif" font-size="44" fill="#0a1414">Language coverage</text>
+<text x="80" y="128" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="21" fill="#4a6560">3 tasks across 3 languages, from 3 distinct upstream repositories</text>
+<path d="M 672.00 342.00 A 330 330 0 0 1 957.79 837.00 L 836.54 767.00 A 190 190 0 0 0 672.00 482.00 Z" fill="#b9781f" stroke="#f3efe6" stroke-width="3"/>
+<line x1="964.7" y1="503.0" x2="1005.4" y2="479.5" stroke="#b9781f" stroke-width="2"/>
+<circle cx="964.7" cy="503.0" r="6" fill="#b9781f"/>
+<rect x="1035.7" y="444.0" width="18" height="18" rx="3" fill="#b9781f"/>
+<text x="1069.7" y="462.0" text-anchor="start" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', ui-serif, serif" font-size="30" font-weight="bold" fill="#0a1414">Python</text>
+<text x="1069.7" y="494.0" text-anchor="start" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="20" fill="#4a6560">1 task &#183; 33%</text>
+<path d="M 957.79 837.00 A 330 330 0 0 1 386.21 837.00 L 507.46 767.00 A 190 190 0 0 0 836.54 767.00 Z" fill="#123230" stroke="#f3efe6" stroke-width="3"/>
+<line x1="672.0" y1="1010.0" x2="672.0" y2="1057.0" stroke="#123230" stroke-width="2"/>
+<circle cx="672.0" cy="1010.0" r="6" fill="#123230"/>
+<rect x="672.0" y="1074.0" width="18" height="18" rx="3" fill="#123230"/>
+<text x="706.0" y="1092.0" text-anchor="start" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', ui-serif, serif" font-size="30" font-weight="bold" fill="#0a1414">Go</text>
+<text x="706.0" y="1124.0" text-anchor="start" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="20" fill="#4a6560">1 task &#183; 33%</text>
+<path d="M 386.21 837.00 A 330 330 0 0 1 672.00 342.00 L 672.00 482.00 A 190 190 0 0 0 507.46 767.00 Z" fill="#0d5a50" stroke="#f3efe6" stroke-width="3"/>
+<line x1="379.3" y1="503.0" x2="338.6" y2="479.5" stroke="#0d5a50" stroke-width="2"/>
+<circle cx="379.3" cy="503.0" r="6" fill="#0d5a50"/>
+<rect x="290.3" y="444.0" width="18" height="18" rx="3" fill="#0d5a50"/>
+<text x="274.3" y="462.0" text-anchor="end" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', ui-serif, serif" font-size="30" font-weight="bold" fill="#0a1414">Java</text>
+<text x="274.3" y="494.0" text-anchor="end" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="20" fill="#4a6560">1 task &#183; 33%</text>
+<circle cx="672.0" cy="672.0" r="184" fill="#ffffff" stroke="rgba(10,30,28,0.10)" stroke-width="1.5"/>
+<text x="672.0" y="666.0" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', ui-serif, serif" font-size="86" font-weight="bold" fill="#0a1414">3</text>
+<text x="672.0" y="706.0" text-anchor="middle" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="22" letter-spacing="4" fill="#4a6560">TASKS</text>
+<text x="672.0" y="738.0" text-anchor="middle" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="18" fill="#4a6560">3 languages</text>
+</svg>

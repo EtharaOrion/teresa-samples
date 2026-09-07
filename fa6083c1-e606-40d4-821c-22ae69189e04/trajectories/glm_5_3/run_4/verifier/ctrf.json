@@ -1,0 +1,103 @@
+{
+  "results": {
+    "tool": {
+      "name": "grade"
+    },
+    "summary": {
+      "tests": 14,
+      "passed": 2,
+      "failed": 12,
+      "pending": 0,
+      "skipped": 0,
+      "other": 0,
+      "start": 0,
+      "stop": 0
+    },
+    "tests": [
+      {
+        "name": "test_gold_routine_pinned",
+        "status": "failed",
+        "weight": 5.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_metrics_accessor_count_is_gold_specific",
+        "status": "failed",
+        "weight": 5.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_value_column_helper_is_gold_specific",
+        "status": "failed",
+        "weight": 5.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_indirect_metric_excluded",
+        "status": "failed",
+        "weight": 5.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_metrics_declarations_cited",
+        "status": "failed",
+        "weight": 3.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_memory_recorder_excluded_from_the_list",
+        "status": "failed",
+        "weight": 3.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_timestamp_helper_excluded_from_the_list",
+        "status": "failed",
+        "weight": 3.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_external_tsfile_excluded",
+        "status": "failed",
+        "weight": 3.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_pair_named_as_external",
+        "status": "passed",
+        "weight": 1.0,
+        "earned": 1.0
+      },
+      {
+        "name": "test_encoding_slot_convention",
+        "status": "failed",
+        "weight": 1.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_jdk_calls_excluded",
+        "status": "failed",
+        "weight": 1.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_read_only_respected",
+        "status": "passed",
+        "weight": 1.0,
+        "earned": 1.0
+      },
+      {
+        "name": "test_modified_code_penalty",
+        "status": "failed",
+        "weight": -3.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_indirect_recorder_counted_as_direct",
+        "status": "failed",
+        "weight": -5.0,
+        "earned": 0.0
+      }
+    ]
+  }
+}

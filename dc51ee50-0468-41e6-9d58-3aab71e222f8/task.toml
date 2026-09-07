@@ -1,0 +1,46 @@
+schema_version = "1.0"
+
+[task]
+uuid_v5 = "dc51ee50-0468-41e6-9d58-3aab71e222f8"
+project_id = "Teresa-001"
+authors = [
+    { email = "vyom.sahu@ethara.ai" },
+    { email = "raksha.singh@ethara.ai" },
+]
+keywords = ["go", "dependency-search", "aro-hcp"]
+name = "teresa/dc51ee50-0468-41e6-9d58-3aab71e222f8"
+
+[metadata]
+difficulty = "hard"
+category = "dependency_search"
+
+[verifier]
+timeout_sec = 1800.0
+environment_mode = "separate"
+
+[agent]
+timeout_sec = 3600.0
+
+[environment]
+build_timeout_sec = 3600.0
+cpus = 2
+memory_mb = 8192
+storage_mb = 20480
+gpus = 0
+os = "linux"
+
+[upstream_provenance]
+# P-001: the task is repackaged from a public repository at a pinned commit, so
+# origin is "derived". There is no upstream fix or pull request; provenance_date
+# is therefore the authored date of base_commit - the point at which the code
+# under study became public and the contamination boundary for reasoning about it.
+origin = "derived"
+provenance_date = "2026-07-31"
+source_kind = "public_repository"
+license = "Apache-2.0"
+modifications = ["rubric-added", "instruction-rewritten"]
+
+[upstream_provenance.source]
+# canonical_repo is the host's current identity, which survives renames.
+canonical_repo = "Azure/ARO-HCP"
+base_commit = "7cfa67722f96feb45f75681e10abfd11ae4b294a"

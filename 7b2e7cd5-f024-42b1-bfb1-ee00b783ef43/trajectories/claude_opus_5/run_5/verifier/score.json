@@ -1,0 +1,445 @@
+{
+  "instance_id": "7b2e7cd5-f024-42b1-bfb1-ee00b783ef43",
+  "reward": 0.2995,
+  "passed": false,
+  "dimensions": {
+    "pytest": 0.1429,
+    "rubric": 0.4561
+  },
+  "criteria": [
+    {
+      "name": "deterministic_tests",
+      "value": 0.1429,
+      "weight": 1.0,
+      "kind": "pytest",
+      "detail": {
+        "returncode": 1,
+        "weighted": true,
+        "score": 0.1429,
+        "tests": {
+          "test_identifies_pnutils_file": {
+            "status": "PASSED",
+            "weight": 1.0,
+            "earned": 1.0
+          },
+          "test_binds_padding_factor_to_gold_helper": {
+            "status": "PASSED",
+            "weight": 3.0,
+            "earned": 3.0
+          },
+          "test_binds_bank_forwarding_to_gold_helper": {
+            "status": "FAILED",
+            "weight": 5.0,
+            "earned": 0.0
+          },
+          "test_binds_duration_map_to_rom_spelling": {
+            "status": "FAILED",
+            "weight": 5.0,
+            "earned": 0.0
+          },
+          "test_binds_peak_bin_refusal_to_listed_cutoff": {
+            "status": "FAILED",
+            "weight": 5.0,
+            "earned": 0.0
+          },
+          "test_v4_gate_turns_away_rom_spelling": {
+            "status": "FAILED",
+            "weight": 5.0,
+            "earned": 0.0
+          },
+          "test_registration_key_binds_stub_to_rom_spelling": {
+            "status": "FAILED",
+            "weight": 5.0,
+            "earned": 0.0
+          },
+          "test_raise_precedes_any_library_call": {
+            "status": "FAILED",
+            "weight": 5.0,
+            "earned": 0.0
+          },
+          "test_getattr_resolves_the_cutoff_name": {
+            "status": "FAILED",
+            "weight": 5.0,
+            "earned": 0.0
+          },
+          "test_refused_spelling_absent_from_pnutils": {
+            "status": "FAILED",
+            "weight": 5.0,
+            "earned": 0.0
+          },
+          "test_alias_evaluates_one_template_at_a_time": {
+            "status": "FAILED",
+            "weight": 5.0,
+            "earned": 0.0
+          },
+          "test_gold_helper_held_at_fault": {
+            "status": "FAILED",
+            "weight": 3.0,
+            "earned": 0.0
+          },
+          "test_gold_helper_is_origin_of_the_inflation": {
+            "status": "PASSED",
+            "weight": 3.0,
+            "earned": 3.0
+          },
+          "test_read_only_respected": {
+            "status": "PASSED",
+            "weight": 1.0,
+            "earned": 1.0
+          },
+          "test_modified_code_penalty": {
+            "status": "FAILED",
+            "weight": -5.0,
+            "earned": 0.0
+          },
+          "test_blames_hm_length_for_inflation_penalty": {
+            "status": "FAILED",
+            "weight": -1.0,
+            "earned": 0.0
+          },
+          "test_blames_numpy_vectorize_penalty": {
+            "status": "FAILED",
+            "weight": -1.0,
+            "earned": 0.0
+          },
+          "test_blames_get_freq_for_refusal_penalty": {
+            "status": "FAILED",
+            "weight": -1.0,
+            "earned": 0.0
+          }
+        },
+        "tail": " test_output.py::test_binds_bank_forwarding_to_gold_helper - AssertionE...\nFAILED test_output.py::test_binds_duration_map_to_rom_spelling - AssertionErr...\nFAILED test_output.py::test_binds_peak_bin_refusal_to_listed_cutoff - Asserti...\nFAILED test_output.py::test_v4_gate_turns_away_rom_spelling - AssertionError:...\nFAILED test_output.py::test_registration_key_binds_stub_to_rom_spelling - Ass...\nFAILED test_output.py::test_raise_precedes_any_library_call - AssertionError:...\nFAILED test_output.py::test_getattr_resolves_the_cutoff_name - AssertionError...\nFAILED test_output.py::test_refused_spelling_absent_from_pnutils - AssertionE...\nFAILED test_output.py::test_alias_evaluates_one_template_at_a_time - Assertio...\nFAILED test_output.py::test_gold_helper_held_at_fault - AssertionError: respo...\nFAILED test_output.py::test_modified_code_penalty - AssertionError: no forbid...\nFAILED test_output.py::test_blames_hm_length_for_inflation_penalty - assert F...\nFAILED test_output.py::test_blames_numpy_vectorize_penalty - assert False\nFAILED test_output.py::test_blames_get_freq_for_refusal_penalty - assert False\n========================= 14 failed, 4 passed in 0.37s =========================\n"
+      }
+    },
+    {
+      "name": "rubric",
+      "value": 0.4561,
+      "weight": 57.0,
+      "kind": "rubric",
+      "detail": {
+        "criteria": [
+          {
+            "name": "r1",
+            "criterion": "The response remarks on the leading underscore that keeps _get_imr_duration private to its module.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 1.0,
+            "met": true,
+            "reasoning": "The response repeatedly calls `_get_imr_duration` a private helper and says the leading underscore hides the implementation from obvious searches, conveying that the underscore marks it as module-private."
+          },
+          {
+            "name": "r2",
+            "criterion": "The response gives 1.1 as the factor applied to the LALSimulation duration.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 1.0,
+            "met": true,
+            "reasoning": "It explicitly identifies `return time_length * 1.1` and explains that this makes the result 10% longer."
+          },
+          {
+            "name": "r3",
+            "criterion": "The response states that the public name get_imr_duration is built by passing _get_imr_duration through numpy.vectorize.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 1.0,
+            "met": true,
+            "reasoning": "It explicitly states that `get_imr_duration` is created as `numpy.vectorize(_get_imr_duration)`."
+          },
+          {
+            "name": "r4",
+            "criterion": "The response attributes the identical padding factor across every admitted approximant to the multiplication sitting after _get_imr_duration's branch chain closes.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 1.0,
+            "met": true,
+            "reasoning": "It says the multiplication is outside every branch and therefore applies unconditionally to every family handled by the branch chain."
+          },
+          {
+            "name": "r5",
+            "criterion": "The response follows the padded duration from _get_imr_duration as far as the per-approximant length stubs.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 1.0,
+            "met": true,
+            "reasoning": "It traces the path through `get_imr_duration`, `get_imr_length`, the per-approximant wrappers such as `seobnrv2/4/5_length_in_time`, and the `_filter_time_lengths` registry."
+          },
+          {
+            "name": "r6",
+            "criterion": "The response states that the numpy.vectorize line in pycbc/pnutils.py is the sole mention of _get_imr_duration outside its own definition.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 1.0,
+            "met": false,
+            "reasoning": "Although it identifies the vectorize assignment and discusses search indirection, it does not clearly state that this assignment is the sole occurrence of `_get_imr_duration` outside the definition."
+          },
+          {
+            "name": "r7",
+            "criterion": "The response reports that _get_imr_duration casts each numeric argument to a scalar float on entry.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 3.0,
+            "met": false,
+            "reasoning": "The response says `get_imr_length` converts five parameters to floats, but it does not clearly attribute the entry-time scalar float casts to `_get_imr_duration` itself."
+          },
+          {
+            "name": "r8",
+            "criterion": "The response characterises the approximant selection inside _get_imr_duration as a chain of literal string equality tests.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 1.0,
+            "met": true,
+            "reasoning": "It explicitly characterizes the dispatch as an `if/elif` chain using exact string equality and says there is no normalization, aliasing, or case folding."
+          },
+          {
+            "name": "r9",
+            "criterion": "The response finds the v5 branch of _get_imr_duration admitting the suffixed spelling SEOBNRv5_ROM.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 1.0,
+            "met": true,
+            "reasoning": "It explicitly says `_get_imr_duration` knows or accepts `SEOBNRv5_ROM` while refusing bare `SEOBNRv5`."
+          },
+          {
+            "name": "r10",
+            "criterion": "The response shows get_inspiral_tf reaching SimIMRSEOBNRv5ROMTimeOfFrequency under the bare key SEOBNRv5.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 5.0,
+            "met": false,
+            "reasoning": "It says `get_inspiral_tf` accepts an `SEOBNRv*` prefix, but does not clearly show that bare `SEOBNRv5` maps specifically to `SimIMRSEOBNRv5ROMTimeOfFrequency`."
+          },
+          {
+            "name": "r11",
+            "criterion": "The response picks out the family prefix normalisation pycbc/pnutils.py already performs on an approximant name.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 5.0,
+            "met": true,
+            "reasoning": "The response contrasts `_get_imr_duration` with `get_inspiral_tf` accepting the `SEOBNRv*` family prefix, thereby identifying the existing prefix-based handling in `pycbc/pnutils.py`."
+          },
+          {
+            "name": "r12",
+            "criterion": "The response states that seobnrv4_length_in_time substitutes the literal string SEOBNRv4 for whatever spelling its caller asked for.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 5.0,
+            "met": false,
+            "reasoning": "It names `seobnrv4_length_in_time` among thin wrappers, but does not clearly state that this stub discards the caller's spelling and substitutes the literal `SEOBNRv4`."
+          },
+          {
+            "name": "r13",
+            "criterion": "The response explains that a bank lacking an approximant column leaves the default approximant parameter of _get_imr_duration in force.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 1.0,
+            "met": true,
+            "reasoning": "It explicitly states that if a bank lacks an `approximant` dataset, empty keyword arguments are passed and `_get_imr_duration`'s default `SEOBNRv4` applies to every row."
+          },
+          {
+            "name": "r14",
+            "criterion": "The response reports that pycbc/events/triggers.py fills in a spelling only where the caller left the approximant unset.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 3.0,
+            "met": false,
+            "reasoning": "The response mentions `events/triggers.py` as a caller but does not clearly report its conditional behavior of filling `SEOBNRv4` only when the caller's approximant is unset."
+          },
+          {
+            "name": "r15",
+            "criterion": "The response reports that one bank row carrying the refused spelling costs the caller the entire duration column.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 3.0,
+            "met": true,
+            "reasoning": "It explicitly explains that `numpy.vectorize` propagates the first exception, so one row with a bad spelling aborts the entire selected duration-column computation."
+          },
+          {
+            "name": "r16",
+            "criterion": "The response shows background_bin_from_string refusing a duration bin type whose approximant _get_imr_duration can compute.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 1.0,
+            "met": true,
+            "reasoning": "It identifies `background_bin_from_string`'s separate three-entry duration map and resulting `ValueError` for other names, while noting computable approximants such as `IMRPhenomXAS` are omitted."
+          },
+          {
+            "name": "r17",
+            "criterion": "The response attributes the longer durations of higher-mode approximants to get_hm_length_in_time scaling f_lower by two over the maximum mode number.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 3.0,
+            "met": true,
+            "reasoning": "It explicitly attributes longer higher-mode durations to `get_hm_length_in_time` replacing `f_lower` with `flow * 2./maxm`."
+          },
+          {
+            "name": "r18",
+            "criterion": "The response reports that get_imr_length hands back the duration value it receives in unaltered form.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 5.0,
+            "met": false,
+            "reasoning": "The response calls `get_imr_length` a thin call-through and says it does no multiplication, but it does not clearly state that its returned duration is passed back wholly unaltered."
+          },
+          {
+            "name": "r19",
+            "criterion": "The response points out that get_imr_length forwards the approximant string it is handed straight to the duration helper.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 3.0,
+            "met": false,
+            "reasoning": "It says `get_imr_length` calls `pnutils.get_imr_duration`, but does not clearly state that the approximant argument handed to `get_imr_length` is forwarded directly and unchanged to that helper."
+          },
+          {
+            "name": "r20",
+            "criterion": "The response clears get_imr_length of running an approximant name test of its own.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 3.0,
+            "met": false,
+            "reasoning": "It does not explicitly establish that `get_imr_length` performs no approximant-name test of its own."
+          },
+          {
+            "name": "r21",
+            "criterion": "The response explains that a hunt for the failing spelling SEOBNRv4_ROM leads away from the routine that turns that spelling away.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 3.0,
+            "met": false,
+            "reasoning": "The response explains indirection through wrappers, the registry, and the private helper, but it does not clearly state the key SEOBNRv4_ROM search result: that searching for the rejected spelling leads to its registry/use sites rather than to `_get_imr_duration`, which rejects it without containing that spelling."
+          },
+          {
+            "name": "r22",
+            "criterion": "The response reports that get_imr_length takes the same parameters as the duration helper it calls.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": 1.0,
+            "met": true,
+            "reasoning": "It states that `get_imr_length` extracts/casts the five mass, spin, and lower-frequency parameters and passes them to `pnutils.get_imr_duration`, conveying that the caller and duration helper use the same parameter set."
+          },
+          {
+            "name": "r23",
+            "criterion": "The agent opened pycbc/pnutils.py before settling on a conclusion.",
+            "type": "agent behavior",
+            "check": "trajectory",
+            "weight": 1.0,
+            "met": true,
+            "reasoning": "Met. The trajectory repeatedly opened and inspected pycbc/pnutils.py, including the full _get_imr_duration implementation at steps 123\u2013124, before the final conclusion."
+          },
+          {
+            "name": "r24",
+            "criterion": "The agent opened pycbc/tmpltbank/bank_conversions.py during its trace of the bank route.",
+            "type": "agent behavior",
+            "check": "trajectory",
+            "weight": 1.0,
+            "met": true,
+            "reasoning": "Met. The trajectory opened pycbc/tmpltbank/bank_conversions.py and inspected get_bank_property and its duration route, notably at steps 133\u2013134 and 247\u2013248."
+          },
+          {
+            "name": "r25",
+            "criterion": "The agent opened pycbc/events/coinc.py during its work on the binning refusals.",
+            "type": "agent behavior",
+            "check": "trajectory",
+            "weight": 1.0,
+            "met": true,
+            "reasoning": "Met. The trajectory opened pycbc/events/coinc.py and inspected background_bin_from_string, its duration map path, and refusal branch at steps 95\u201396 and elsewhere."
+          },
+          {
+            "name": "r26",
+            "criterion": "The agent opened pycbc/events/triggers.py to see how that caller supplies an approximant.",
+            "type": "agent behavior",
+            "check": "trajectory",
+            "weight": 1.0,
+            "met": true,
+            "reasoning": "Met. The trajectory opened pycbc/events/triggers.py and examined the template_duration caller, including how args.approximant defaults to SEOBNRv4 or is forwarded, at steps 109\u2013110 and 127\u2013128."
+          },
+          {
+            "name": "r27",
+            "criterion": "The agent read the approximant-to-routine mapping that get_inspiral_tf builds in pycbc/pnutils.py.",
+            "type": "agent behavior",
+            "check": "trajectory",
+            "weight": 1.0,
+            "met": true,
+            "reasoning": "Met. The trajectory read get_inspiral_tf's tof_func_map in pycbc/pnutils.py, including the SEOBNRv2, SEOBNRv4, and SEOBNRv5 mappings to LAL routines, at steps 160\u2013161 and 203\u2013204."
+          },
+          {
+            "name": "r28",
+            "criterion": "The response names get_imr_length as the one function at the bottom of the reported duration behaviour.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": -5.0,
+            "met": false,
+            "reasoning": "The response explicitly identifies `_get_imr_duration`, not `get_imr_length`, as the function responsible for the duration behavior, and describes `get_imr_length` as a forwarding wrapper."
+          },
+          {
+            "name": "r29",
+            "criterion": "The response attributes the constant proportional inflation seen across every family to get_hm_length_in_time.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": -3.0,
+            "met": false,
+            "reasoning": "The constant proportional inflation is attributed to `_get_imr_duration` and its unconditional `time_length * 1.1`. `get_hm_length_in_time` is discussed separately as a higher-mode frequency-rescaling mechanism."
+          },
+          {
+            "name": "r30",
+            "criterion": "The response claims lalsimulation refuses the ROM spelling of the approximant.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": -3.0,
+            "met": false,
+            "reasoning": "The response attributes rejected spellings to PyCBC's exact string comparisons and branch fall-through before a matching LALSimulation call, not to LALSimulation refusing the approximant."
+          },
+          {
+            "name": "r31",
+            "criterion": "The response treats numpy.vectorize as the source of the altered duration values.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": -1.0,
+            "met": false,
+            "reasoning": "`numpy.vectorize` is blamed for exception propagation and whole-column failure, not for changing duration values. The altered values are attributed to the explicit 1.1 multiplication."
+          },
+          {
+            "name": "r32",
+            "criterion": "The response cites a file path, function or module attribute absent from the repository at this commit.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": -3.0,
+            "met": false,
+            "reasoning": "There is no clear evidence that any cited repository path, function, or module attribute is absent at the stated commit."
+          },
+          {
+            "name": "r33",
+            "criterion": "The response offers a general account of waveform duration estimation in place of tracing this repository's code.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": -3.0,
+            "met": false,
+            "reasoning": "The response performs an extensive repository-specific trace with named functions, call paths, files, and line references rather than substituting a generic explanation of waveform duration estimation."
+          },
+          {
+            "name": "r34",
+            "criterion": "The response names get_freq as the routine that turns away the refused duration spelling.",
+            "type": "answer content",
+            "check": "final_answer",
+            "weight": -1.0,
+            "met": false,
+            "reasoning": "The response does not identify `get_freq` as the routine rejecting the duration spelling; it identifies the exact-name gate in `_get_imr_duration` and separate configuration allow-lists."
+          }
+        ],
+        "dimension_divergence": {
+          "pytest": 0.1429,
+          "rubric": 0.4561,
+          "gap": 0.3133
+        }
+      }
+    }
+  ],
+  "violations": [],
+  "gate_violations": [],
+  "judge_usage": {
+    "n_calls": 9,
+    "input_tokens": 242622,
+    "output_tokens": 11197,
+    "cache_read_tokens": 160768,
+    "cost_usd": 0.615662
+  }
+}

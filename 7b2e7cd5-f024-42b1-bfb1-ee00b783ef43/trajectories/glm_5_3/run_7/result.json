@@ -1,0 +1,42 @@
+{
+  "id": "2a45c305-0e97-58f8-b196-2e0e8aefc75c",
+  "task_name": "7b2e7cd5-f024-42b1-bfb1-ee00b783ef43",
+  "trial_name": "glm_5_3/run_7",
+  "trial_uri": "file:///home/user/teresa/teresa-harness/evaluation/evaluation_outputs/outputs/final_delivery_glm/7b2e7cd5-f024-42b1-bfb1-ee00b783ef43/harbor/7b2e7cd5-f024-42b1-bfb1-ee00b783ef43/trajectories/glm_5_3/run_7",
+  "task_id": {
+    "git_url": "https://github.com/gwastro/pycbc.git",
+    "git_commit_id": "f1e16ea53cff7c7ee60182aa067a5271d7628daa",
+    "path": "."
+  },
+  "source": "gwastro/pycbc",
+  "task_checksum": "sha256:4396b70da4ba477ffceb3fd9eefcceffe078e68de1faf719f217f4fcfa72d5f3",
+  "config": null,
+  "agent_info": {
+    "name": "CodeActAgent",
+    "version": "openhands-runtime-0.40.0",
+    "model_info": {
+      "name": "anthropic/glm-5.3",
+      "provider": "anthropic"
+    }
+  },
+  "agent_result": null,
+  "verifier_result": {
+    "rewards": {
+      "pytest": 0.2857142857142857,
+      "rubric": 0.38596491228070173,
+      "reward": 0.3358
+    }
+  },
+  "verifier_environment_mode": "separate",
+  "exception_info": null,
+  "started_at": "2026-09-05T10:33:53+00:00",
+  "finished_at": "2026-09-05T11:21:27.760996+00:00",
+  "environment_setup": null,
+  "agent_setup": null,
+  "agent_execution": {
+    "started_at": "2026-09-05T10:33:53+00:00",
+    "finished_at": "2026-09-05T11:21:27.760996+00:00"
+  },
+  "verifier": null,
+  "step_results": null
+}
