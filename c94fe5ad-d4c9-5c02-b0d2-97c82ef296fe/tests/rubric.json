@@ -1,0 +1,326 @@
+[
+  {
+    "number": "R1",
+    "criterion": "The response reports that default_constructor is the sole routine in the tree that manufactures the injected constructor.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": 5
+  },
+  {
+    "number": "R2",
+    "criterion": "The response reports that fold_constructor treats a dummy span on the Constructor node as its mark that the constructor was injected.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R3",
+    "criterion": "The response reports that the super(...args) CallExpr carries a dummy span from the moment default_constructor builds it.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R4",
+    "criterion": "The response reports that fold_constructor discards the parameter list of an injected constructor.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R5",
+    "criterion": "The response reports that the Constructor node and the super(...args) CallExpr nested inside it carry independently settable spans.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": 5
+  },
+  {
+    "number": "R6",
+    "criterion": "The response identifies fold_constructor in crates/swc_ecma_compat_es2015/src/classes/constructor.rs as a caller that obtains the injected constructor from default_constructor.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R7",
+    "criterion": "The response accounts for a decorator heavy package and a decorator free package showing the same defect by pointing to default_constructor as common to both paths.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R8",
+    "criterion": "The response explains that sources which look interchangeable diverge according to whether the author wrote a constructor of their own.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R9",
+    "criterion": "The response explains that a class carrying an author written constructor is lowered from parsed nodes that already hold real source positions.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R10",
+    "criterion": "The response links the symptom clearing at a higher output language level to the class lowering passes falling idle.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R11",
+    "criterion": "The response explains the colleague's unreproducible recovery as a tidy up that happened to add an explicit constructor to the class whose frame misresolved.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R12",
+    "criterion": "The response reports that the emitted program text is unaffected by this defect.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R13",
+    "criterion": "The response attributes the clean resolution of the neighbouring frames to the parsed nodes around the injected constructor holding their own source positions.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R14",
+    "criterion": "The response sets out the causal order that runs from default_constructor minting the unpositioned super(...args) CallExpr to code generation declining to record a mapping entry.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R15",
+    "criterion": "The response identifies Emitter::emit_call_expr in crates/swc_ecma_codegen/src/lib.rs as the routine that requests a mapping entry for every call expression.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R16",
+    "criterion": "The response notes the further dummy position guard applied in crates/swc_common/src/source_map.rs.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "minor",
+    "score": 1
+  },
+  {
+    "number": "R17",
+    "criterion": "The response clears inject_after_super in crates/swc_ecma_utils/src/constructor.rs of responsibility for the missing position.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R18",
+    "criterion": "The response reports that the rest parameter default_constructor builds also carries a dummy span.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "minor",
+    "score": 1
+  },
+  {
+    "number": "R19",
+    "criterion": "The response reports that the Super callee node inside the super(...args) CallExpr carries a dummy span of its own.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "minor",
+    "score": 1
+  },
+  {
+    "number": "R20",
+    "criterion": "The response states that default_constructor builds each node it returns from scratch.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R21",
+    "criterion": "The agent opens crates/swc_ecma_utils/src/lib.rs during its investigation.",
+    "is_positive": true,
+    "type": "agent behavior",
+    "evaluation_target": "trajectory",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R22",
+    "criterion": "The agent enumerates the callers of default_constructor across more than one crate.",
+    "is_positive": true,
+    "type": "agent behavior",
+    "evaluation_target": "trajectory",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R23",
+    "criterion": "The agent reads the code generation path that records mapping entries.",
+    "is_positive": true,
+    "type": "agent behavior",
+    "evaluation_target": "trajectory",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R24",
+    "criterion": "The agent reads the body of fold_constructor as far as its span inspection.",
+    "is_positive": true,
+    "type": "agent behavior",
+    "evaluation_target": "trajectory",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R25",
+    "criterion": "The response presents the dummy position guard in the code generation path as the code that ought to change.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": -5
+  },
+  {
+    "number": "R26",
+    "criterion": "The response offers uncited general theory about position mapping behaviour.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": -3
+  },
+  {
+    "number": "R27",
+    "criterion": "The response places the fault in the crash reporter or in the consumer that reads the mapping file.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": -1
+  },
+  {
+    "number": "R28",
+    "criterion": "The response attributes the misresolving frame to the parser recording source positions incorrectly.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": -1
+  },
+  {
+    "number": "R29",
+    "criterion": "The response explains that default_constructor receives only a boolean saying whether the class has a superclass, so it has no source position it could place on the nodes it builds.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R30",
+    "criterion": "The response explains that code generation records a mapping entry for a call expression only when the node's low position is not dummy, so the synthesized super(...args) call contributes no entry.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R31",
+    "criterion": "The response clears fold_constructor in crates/swc_ecma_compat_es2015/src/classes/constructor.rs of responsibility for the missing position, because it receives an already built Constructor and never assigns the span of the super(...args) call.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": 5
+  },
+  {
+    "number": "R32",
+    "criterion": "The response presents fold_constructor as the routine answerable for the missing position of the synthesized super(...args) call.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": -1
+  },
+  {
+    "number": "R33",
+    "criterion": "The response places the cause of the misresolving frame in the minifier or another compression pass.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": -1
+  },
+  {
+    "number": "R34",
+    "criterion": "The response cites a repository crate or file path that does not exist at the base commit.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": -1
+  },
+  {
+    "number": "R35",
+    "criterion": "The response names default_constructor in crates/swc_ecma_utils/src/lib.rs as the routine answerable for the difference between the correctly resolving frames and the misresolving synthesized super(...args) frame.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": 5
+  },
+  {
+    "number": "R36",
+    "criterion": "The response lists file paths and routine names without explaining how they produce the reported behaviour.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": -5
+  }
+]

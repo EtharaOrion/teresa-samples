@@ -1,0 +1,398 @@
+[
+  {
+    "number": "R1",
+    "criterion": "The response concludes that one constructor supplies both the enclosing alias and the qualified name that collides with it.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": 5
+  },
+  {
+    "number": "R2",
+    "criterion": "The response places the call that fails at the moment a historical collection on a returned snapshot is read.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R3",
+    "criterion": "The response treats the composing step and the failing read as separate stages of the object lifecycle.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R4",
+    "criterion": "The response reports that the referenced type's audit entity name enters the statement in fully qualified form.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R5",
+    "criterion": "The response points out that the leading package segment of the referenced type's qualified audit entity name lands in the position an enclosing alias lookup examines.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R6",
+    "criterion": "The response states that enclosing aliases are consulted only when a parent source list is present.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R7",
+    "criterion": "The response locates the resolution error inside the correlated subquery that the audit strategy nests into the statement.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": 5
+  },
+  {
+    "number": "R8",
+    "criterion": "The response identifies the enclosing lookup landing on the generator's declared alias as the step that turns the qualified name into a property path.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R9",
+    "criterion": "The response states that the remainder of the qualified path is then resolved as a property of the link-table audit entity.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R10",
+    "criterion": "The response explains that a target type left out of historical tracking routes the same mapping to TwoEntityOneAuditedQueryGenerator.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R11",
+    "criterion": "The response describes QueryBuilder as accumulating its sources as entity-name and alias pairs.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R12",
+    "criterion": "The response states that QueryBuilder renders each source as the entity name followed by its alias.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R13",
+    "criterion": "The response reasons that QueryBuilder records whatever alias its callers hand it.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R14",
+    "criterion": "The response concludes that the choice of alias for the failing statement rests with the generator constructor.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R15",
+    "criterion": "The response states that the audit strategy receives the alias pair as arguments from the generator constructor.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R16",
+    "criterion": "The response states that the audit strategy receives the referenced id data as an argument from the generator constructor.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R17",
+    "criterion": "The response traces the failing call through AbstractCollectionInitializor.initialize.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R18",
+    "criterion": "The response notes that the collection initializor calls list on the query handed back by getQuery.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R19",
+    "criterion": "The response observes that the RelationQueryGenerator interface exposes getQuery as its single member.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R20",
+    "criterion": "The response explains that the one-method RelationQueryGenerator interface hides which concrete implementation produced the statement text.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R21",
+    "criterion": "The response explains that OneAuditEntityQueryGenerator declares the alias e alone in its enclosing statement.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R22",
+    "criterion": "The response reasons that the qualified path stays a whole entity name inside OneAuditEntityQueryGenerator's statement.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R23",
+    "criterion": "The response concludes that harm requires an enclosing alias matching the leading segment of a qualified name used inside a nested source list.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": 5
+  },
+  {
+    "number": "R24",
+    "criterion": "The response explains that the entity-level historical read builds its statement over a single root source under the alias e.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R25",
+    "criterion": "The response attributes the success of the owning-record snapshot read to its enclosing statement declaring an alias that differs from the leading package segment.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R26",
+    "criterion": "The agent opens the two-entity relation query generator source file in the checkout to read how its statement text is assembled.",
+    "is_positive": true,
+    "type": "agent behavior",
+    "evaluation_target": "trajectory",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R27",
+    "criterion": "The agent reads the configuration-side builder that instantiates the relation query generators.",
+    "is_positive": true,
+    "type": "agent behavior",
+    "evaluation_target": "trajectory",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R28",
+    "criterion": "The agent inspects the shared query-building utility to see how the source list turns into text.",
+    "is_positive": true,
+    "type": "agent behavior",
+    "evaluation_target": "trajectory",
+    "importance": "moderately_important",
+    "score": 1
+  },
+  {
+    "number": "R29",
+    "criterion": "The agent compares several generator implementations in the query package before settling on one.",
+    "is_positive": true,
+    "type": "agent behavior",
+    "evaluation_target": "trajectory",
+    "importance": "minor",
+    "score": 1
+  },
+  {
+    "number": "R30",
+    "criterion": "The response presents the core from-element handling of the HQL parser as the origin of the reported failure.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": -5
+  },
+  {
+    "number": "R31",
+    "criterion": "The response attributes the failure to the mapping metadata generator that walks the collection.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": -3
+  },
+  {
+    "number": "R32",
+    "criterion": "The response attributes the failure to the parameter binding performed at read time.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": -3
+  },
+  {
+    "number": "R33",
+    "criterion": "The response offers general remarks about query aliasing in place of routines read from the checkout.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "minor",
+    "score": -1
+  },
+  {
+    "number": "R34",
+    "criterion": "The response reports that the TwoEntityQueryGenerator constructor declares the link-table audit entity under the literal alias ee when it creates its QueryBuilder.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": 5
+  },
+  {
+    "number": "R35",
+    "criterion": "The response reports that the TwoEntityQueryGenerator constructor adds the referenced type's audit entity name as a further source under the alias e.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R36",
+    "criterion": "The response explains that the constructor keeps the finished statement text in a field and that getQuery only passes that stored text to createQuery and binds parameters, composing nothing itself.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R37",
+    "criterion": "The response identifies QueryGeneratorBuilder.build as the routine that selects TwoEntityQueryGenerator for this mapping.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": 5
+  },
+  {
+    "number": "R38",
+    "criterion": "The response states that TwoEntityQueryGenerator is selected when exactly one related id data has been accumulated and that related type is itself audited.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R39",
+    "criterion": "The response identifies the audit strategy's addEntityAtRevisionRestriction, in DefaultAuditStrategy under the default strategy, as a routine that contributes the nested subquery fragment carrying the referenced type's audit entity name.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": 3
+  },
+  {
+    "number": "R40",
+    "criterion": "The response presents TwoEntityQueryGenerator.getQuery as the routine that composes the statement text.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "important",
+    "score": -3
+  },
+  {
+    "number": "R41",
+    "criterion": "The response presents QueryBuilder as the place that chooses the colliding alias or as the origin of the defect.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "moderately_important",
+    "score": -1
+  },
+  {
+    "number": "R42",
+    "criterion": "The response relies on classes or routines that do not exist in the checkout to explain the failure.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "minor",
+    "score": -1
+  },
+  {
+    "number": "R43",
+    "criterion": "The response gives, as the repository-relative path of the file that holds the routine composing the quoted statement text, hibernate-envers/src/main/java/org/hibernate/envers/entities/mapper/relation/query/TwoEntityQueryGenerator.java.",
+    "is_positive": true,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": 5
+  },
+  {
+    "number": "R44",
+    "criterion": "The response lists file paths and routine names without explaining how they produce the reported behaviour.",
+    "is_positive": false,
+    "type": "answer content",
+    "evaluation_target": "final_answer",
+    "importance": "critically_important",
+    "score": -5
+  }
+]

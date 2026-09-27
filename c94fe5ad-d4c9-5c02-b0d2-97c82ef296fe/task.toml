@@ -1,0 +1,58 @@
+schema_version = "1.4"
+
+[[artifacts]]
+source = "/logs/agent/trajectory.json"
+
+[[artifacts]]
+source = "/logs/agent/answer.md"
+
+[[artifacts]]
+source = "/logs/agent/sessions"
+destination = "agent-sessions"
+
+[[artifacts]]
+source = "/logs/agent/completions"
+destination = "agent-completions"
+
+[task]
+version = "1.0.0"
+name = "teresa/c94fe5ad-d4c9-5c02-b0d2-97c82ef296fe"
+uuid_v5 = "c94fe5ad-d4c9-5c02-b0d2-97c82ef296fe"
+authors = [
+    { name = "Om Prakash", email = "om.prakash@ethara.ai" },
+]
+keywords = ["rust", "issue_localization"]
+
+[metadata]
+instance_id = "c94fe5ad-d4c9-5c02-b0d2-97c82ef296fe"
+repo = "swc-project/swc"
+base_commit = "c55e52479765bf14c7d241efa70cca861d7699e5"
+language = "rust"
+family = "issue_localization"
+harbor_commit = "cfc54c995e90cd438deb862189a58053b9d89fd3"
+
+[verifier]
+timeout_sec = 600.0
+
+[verifier.env]
+HG_INSTANCE_ID = "c94fe5ad-d4c9-5c02-b0d2-97c82ef296fe"
+JUDGE_MODEL = "${JUDGE_MODEL:-}"
+JUDGE_API_KEY = "${JUDGE_API_KEY:-}"
+JUDGE_BASE_URL = "${JUDGE_BASE_URL:-}"
+
+[[verifier.collect]]
+command = "git -C /workspace/swc-project__swc add -A && git -C /workspace/swc-project__swc diff --cached > /logs/artifacts/agent.patch"
+
+[agent]
+network_mode = "allowlist"
+allowed_hosts = ["192.168.65.0/24", "172.16.0.0/12"]
+
+[environment]
+network_mode = "public"
+docker_image = "426628337772.dkr.ecr.ap-south-1.amazonaws.com/teresa:c94fe5ad-d4c9-5c02-b0d2-97c82ef296fe@sha256:a807e28e60cc5157903f4b03dcea079d8c80c4db5c5af97bced9cc526be0dfd6"
+build_timeout_sec = 3600.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 20480
+gpus = 0
+os = "linux"

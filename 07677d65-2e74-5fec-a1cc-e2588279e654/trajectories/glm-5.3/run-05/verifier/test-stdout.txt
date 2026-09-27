@@ -1,0 +1,13 @@
+[info] history: 141 events from events
+  test_answer_grounded                           FAILED  w=1
+  test_modified_code_penalty                     FAILED  w=-5
+  test_opened_impl_EntitiesAtRevisionQuery       FAILED  w=1
+  test_opened_initializor_AbstractCollectionInitializor FAILED  w=1
+  test_opened_query_QueryBuilder                 PASSED  w=1
+  test_opened_query_RelationQueryGenerator       FAILED  w=1
+  test_read_TwoEntityQueryGenerator_in_query_TwoEntityQueryGenerator PASSED  w=5
+  test_read_addEntityAtRevisionRestriction_in_strategy_DefaultAuditStrategy PASSED  w=3
+  test_read_addFromElement_in_tree_FromElementFactory FAILED  w=3
+  test_read_build_in_metadata_QueryGeneratorBuilder PASSED  w=3
+[ok] pytest=0.6316  (process channel only -- rubric scores the answer)
+{"pytest": 0.6316, "rubric": 0.2653, "reward": 0.4484}

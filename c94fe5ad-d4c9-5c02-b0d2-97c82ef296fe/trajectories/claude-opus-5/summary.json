@@ -1,0 +1,211 @@
+{
+  "instance_id": "c94fe5ad-d4c9-5c02-b0d2-97c82ef296fe",
+  "model": "claude-opus-5",
+  "n_runs": 8,
+  "agent": "openhands",
+  "agent_version": "0.62.0",
+  "dimensions": {
+    "pytest": {
+      "mean": 0.7829,
+      "median": 0.7895,
+      "min": 0.7368,
+      "max": 0.8947,
+      "stdev": 0.0522,
+      "n": 8
+    },
+    "rubric": {
+      "mean": 0.2261,
+      "median": 0.2279,
+      "min": 0.1618,
+      "max": 0.3088,
+      "stdev": 0.0465,
+      "n": 8
+    },
+    "reward": {
+      "mean": 0.5045,
+      "median": 0.5013,
+      "min": 0.4756,
+      "max": 0.543,
+      "stdev": 0.0252,
+      "n": 8
+    }
+  },
+  "runs": [
+    {
+      "run": "run-01",
+      "harbor_trial": "c94fe5ad-d4c9-5c02-b0d2-112c78b8__VYWM33z",
+      "pytest": 0.7368421052631579,
+      "rubric": 0.23529411764705882,
+      "reward": 0.4861,
+      "tokens": {
+        "input_fresh": 352,
+        "cache_read": 17129738,
+        "cache_write": 775289,
+        "output": 1398768,
+        "reasoning": 316653
+      }
+    },
+    {
+      "run": "run-02",
+      "harbor_trial": "c94fe5ad-d4c9-5c02-b0d2-112c78b8__K2Xk5MN",
+      "pytest": 0.7894736842105263,
+      "rubric": 0.19117647058823528,
+      "reward": 0.4903,
+      "tokens": {
+        "input_fresh": 302,
+        "cache_read": 12823087,
+        "cache_write": 641689,
+        "output": 942451,
+        "reasoning": 203277
+      }
+    },
+    {
+      "run": "run-03",
+      "harbor_trial": "c94fe5ad-d4c9-5c02-b0d2-112c78b8__xyHjDEz",
+      "pytest": 0.7368421052631579,
+      "rubric": 0.22058823529411764,
+      "reward": 0.4787,
+      "tokens": {
+        "input_fresh": 364,
+        "cache_read": 17020469,
+        "cache_write": 2331206,
+        "output": 1747205,
+        "reasoning": 385252
+      }
+    },
+    {
+      "run": "run-04",
+      "harbor_trial": "c94fe5ad-d4c9-5c02-b0d2-112c78b8__ZWvqMAQ",
+      "pytest": 0.7368421052631579,
+      "rubric": 0.3088235294117647,
+      "reward": 0.5228,
+      "tokens": {
+        "input_fresh": 340,
+        "cache_read": 17053114,
+        "cache_write": 1605937,
+        "output": 1782882,
+        "reasoning": 400085
+      }
+    },
+    {
+      "run": "run-05",
+      "harbor_trial": "c94fe5ad-d4c9-5c02-b0d2-112c78b8__tvMmeBT",
+      "pytest": 0.7894736842105263,
+      "rubric": 0.16176470588235295,
+      "reward": 0.4756,
+      "tokens": {
+        "input_fresh": 268,
+        "cache_read": 10213710,
+        "cache_write": 400159,
+        "output": 724745,
+        "reasoning": 156490
+      }
+    },
+    {
+      "run": "run-06",
+      "harbor_trial": "c94fe5ad-d4c9-5c02-b0d2-112c78b8__4JkLRaj",
+      "pytest": 0.8947368421052632,
+      "rubric": 0.19117647058823528,
+      "reward": 0.543,
+      "tokens": {
+        "input_fresh": 354,
+        "cache_read": 16825123,
+        "cache_write": 277522,
+        "output": 1183429,
+        "reasoning": 261133
+      }
+    },
+    {
+      "run": "run-07",
+      "harbor_trial": "c94fe5ad-d4c9-5c02-b0d2-112c78b8__s75uDco",
+      "pytest": 0.7894736842105263,
+      "rubric": 0.23529411764705882,
+      "reward": 0.5124,
+      "tokens": {
+        "input_fresh": 362,
+        "cache_read": 18765702,
+        "cache_write": 561338,
+        "output": 1362504,
+        "reasoning": 299785
+      }
+    },
+    {
+      "run": "run-08",
+      "harbor_trial": "c94fe5ad-d4c9-5c02-b0d2-112c78b8__NpVJmAt",
+      "pytest": 0.7894736842105263,
+      "rubric": 0.2647058823529412,
+      "reward": 0.5271,
+      "tokens": {
+        "input_fresh": 366,
+        "cache_read": 18119725,
+        "cache_write": 1893313,
+        "output": 1937617,
+        "reasoning": 423000
+      }
+    }
+  ],
+  "pass_at_k": {
+    "threshold": 0.7,
+    "note": "computed here; harbor's requires binary 0/1 rewards",
+    "k": {
+      "1": 0.0,
+      "2": 0.0,
+      "4": 0.0,
+      "8": 0.0
+    }
+  },
+  "harbor_ran_on": {
+    "c94fe5ad-d4c9-5c02-b0d2-112c78b8__VYWM33z": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "c94fe5ad-d4c9-5c02-b0d2-112c78b8__K2Xk5MN": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "c94fe5ad-d4c9-5c02-b0d2-112c78b8__xyHjDEz": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "c94fe5ad-d4c9-5c02-b0d2-112c78b8__ZWvqMAQ": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "c94fe5ad-d4c9-5c02-b0d2-112c78b8__tvMmeBT": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "c94fe5ad-d4c9-5c02-b0d2-112c78b8__4JkLRaj": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "c94fe5ad-d4c9-5c02-b0d2-112c78b8__s75uDco": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "c94fe5ad-d4c9-5c02-b0d2-112c78b8__NpVJmAt": {
+      "version": "unknown",
+      "is_editable": false
+    }
+  },
+  "tokens": {
+    "input_fresh": 2708,
+    "cache_read": 127950668,
+    "cache_write": 8486453,
+    "output": 11079601,
+    "reasoning": 2445675
+  },
+  "cost": {
+    "basis": "derived at list price; inference ran on a subscription bridge and was not metered per call, so harbor records cost_usd: null",
+    "source": "litellm.model_cost",
+    "usd_per_mtok": {
+      "input": 5.0,
+      "cache_read": 0.5,
+      "cache_write": 6.25,
+      "output": 25.0
+    },
+    "usd": 394.0192,
+    "without_cache_usd": 959.1892,
+    "cache_saving_usd": 565.1699
+  }
+}

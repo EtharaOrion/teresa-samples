@@ -1,0 +1,103 @@
+{
+  "results": {
+    "tool": {
+      "name": "grade"
+    },
+    "summary": {
+      "tests": 14,
+      "passed": 10,
+      "failed": 4,
+      "pending": 0,
+      "skipped": 0,
+      "other": 0,
+      "start": 0,
+      "stop": 0
+    },
+    "tests": [
+      {
+        "name": "test_read_default_constructor_in_src_lib",
+        "status": "passed",
+        "weight": 5.0,
+        "earned": 5.0
+      },
+      {
+        "name": "test_read_srcmap_in_src_macros",
+        "status": "passed",
+        "weight": 3.0,
+        "earned": 3.0
+      },
+      {
+        "name": "test_opened_src_source_map",
+        "status": "passed",
+        "weight": 1.0,
+        "earned": 1.0
+      },
+      {
+        "name": "test_opened_src_lib",
+        "status": "passed",
+        "weight": 1.0,
+        "earned": 1.0
+      },
+      {
+        "name": "test_opened_classes_constructor",
+        "status": "passed",
+        "weight": 1.0,
+        "earned": 1.0
+      },
+      {
+        "name": "test_opened_classes_mod",
+        "status": "failed",
+        "weight": 1.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_opened_class_properties_mod",
+        "status": "passed",
+        "weight": 1.0,
+        "earned": 1.0
+      },
+      {
+        "name": "test_opened_src_private_in_object",
+        "status": "failed",
+        "weight": 1.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_opened_src_class_fields_use_set",
+        "status": "passed",
+        "weight": 1.0,
+        "earned": 1.0
+      },
+      {
+        "name": "test_opened_src_decorator_impl",
+        "status": "passed",
+        "weight": 1.0,
+        "earned": 1.0
+      },
+      {
+        "name": "test_opened_decorators_mod",
+        "status": "passed",
+        "weight": 1.0,
+        "earned": 1.0
+      },
+      {
+        "name": "test_opened_src_constructor",
+        "status": "passed",
+        "weight": 1.0,
+        "earned": 1.0
+      },
+      {
+        "name": "test_answer_grounded",
+        "status": "failed",
+        "weight": 1.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_modified_code_penalty",
+        "status": "failed",
+        "weight": -5.0,
+        "earned": 0.0
+      }
+    ]
+  }
+}

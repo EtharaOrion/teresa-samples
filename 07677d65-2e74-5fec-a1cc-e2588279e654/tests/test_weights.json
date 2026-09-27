@@ -1,0 +1,12 @@
+{
+  "test_read_TwoEntityQueryGenerator_in_query_TwoEntityQueryGenerator": 5,
+  "test_read_build_in_metadata_QueryGeneratorBuilder": 3,
+  "test_read_addEntityAtRevisionRestriction_in_strategy_DefaultAuditStrategy": 3,
+  "test_read_addFromElement_in_tree_FromElementFactory": 3,
+  "test_opened_initializor_AbstractCollectionInitializor": 1,
+  "test_opened_query_RelationQueryGenerator": 1,
+  "test_opened_impl_EntitiesAtRevisionQuery": 1,
+  "test_opened_query_QueryBuilder": 1,
+  "test_answer_grounded": 1,
+  "test_modified_code_penalty": -5
+}

@@ -1,0 +1,143 @@
+{
+    "id": "bc4bf247-d7e5-41cd-adca-b05ae4069ab2",
+    "task_name": "teresa/b93729aa-2cbe-516d-94b6-c09b55d1c743",
+    "trial_name": "b93729aa-2cbe-516d-94b6-e57449eb__UFA6YuR",
+    "trial_uri": "file://<HOST>",
+    "task_id": {
+        "path": "<HOST>"
+    },
+    "source": null,
+    "task_checksum": "16fec9c29bcc30901b85f8a46276c7488ba45fcfccf11ee4585509b1be3c438b",
+    "config": {
+        "task": {
+            "path": "<HOST>",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "b93729aa-2cbe-516d-94b6-e57449eb__UFA6YuR",
+        "trials_dir": "<HOST>/teresa/glm-run/jobs/b93729aa-glm-20260924-192005",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": 6.0,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "openhands",
+            "import_path": null,
+            "model_name": "zai/glm-5.3",
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {
+                "version": "0.62.0",
+                "python_version": 3.12,
+                "max_iterations": 200,
+                "model_info": {
+                    "max_output_tokens": 32768,
+                    "max_input_tokens": 200000
+                },
+                "num_retries": 10,
+                "temperature": 1.0,
+                "caching_prompt": true
+            },
+            "env": {
+                "LLM_TIMEOUT": "900",
+                "LLM_NATIVE_TOOL_CALLING": "true",
+                "LLM_RETRY_MIN_WAIT": "60",
+                "LLM_RETRY_MAX_WAIT": "1800",
+                "LLM_RETRY_MULTIPLIER": "2.0",
+                "UV_DEFAULT_INDEX": "http://172.17.0.1:8799/simple/",
+                "UV_INDEX_URL": "http://172.17.0.1:8799/simple/",
+                "ANTHROPIC_BASE_URL": "http://172.17.0.1:8766",
+                "ANTHROPIC_API_KEY": "zb-i****ret"
+            },
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "stream": false,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "ab4640ee-8e5b-47fa-ab50-923e08eb24c7",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "openhands",
+        "version": "0.62.0",
+        "model_info": {
+            "name": "glm-5.3",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 3192700,
+        "n_cache_tokens": 3109824,
+        "n_output_tokens": 29776,
+        "cost_usd": null,
+        "model_usage": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "pytest": 0.6471,
+            "rubric": 0.0,
+            "reward": 0.3235
+        }
+    },
+    "verifier_environment_mode": "shared",
+    "exception_info": null,
+    "started_at": "2026-09-24T19:56:14.440831Z",
+    "finished_at": "2026-09-24T20:06:32.475562Z",
+    "environment_setup": {
+        "started_at": "2026-09-24T19:56:14.441826Z",
+        "finished_at": "2026-09-24T19:56:17.337670Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-09-24T19:56:17.337690Z",
+        "finished_at": "2026-09-24T19:56:54.398078Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-09-24T19:56:54.398191Z",
+        "finished_at": "2026-09-24T20:06:16.961879Z"
+    },
+    "verifier": {
+        "started_at": "2026-09-24T20:06:17.863177Z",
+        "finished_at": "2026-09-24T20:06:18.650658Z"
+    },
+    "step_results": null
+}

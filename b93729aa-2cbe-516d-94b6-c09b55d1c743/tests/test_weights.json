@@ -1,0 +1,21 @@
+{
+  "test_read_estimate_gas_to_fulfill_in_mod": 5,
+  "test_read_price_order_in_mod": 3,
+  "test_read_calculate_exec_limits_in_mod": 3,
+  "test_read_estimate_gas_to_fulfill_in_helpers": 3,
+  "test_read_submission_path_for_risc0_selector_in_lib": 3,
+  "test_read_prove_and_update_db_in_service": 3,
+  "test_opened_router": 1,
+  "test_opened_router_policy": 1,
+  "test_opened_types": 1,
+  "test_opened_fulfillment_batch": 1,
+  "test_opened_mod": 1,
+  "test_opened_requestor_pricing": 1,
+  "test_opened_selector": 1,
+  "test_opened_service": 1,
+  "test_opened_helpers": 1,
+  "test_opened_mod_utils": 1,
+  "test_searched_groth16_verify_gas_estimate": 1,
+  "test_answer_grounded": 3,
+  "test_modified_code_penalty": -5
+}

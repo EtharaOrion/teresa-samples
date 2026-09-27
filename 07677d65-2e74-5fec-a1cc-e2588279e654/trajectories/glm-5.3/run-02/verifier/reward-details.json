@@ -1,0 +1,483 @@
+{
+  "07677d65-2e74-5fec-a1cc-e2588279e654": {
+    "instance_id": "07677d65-2e74-5fec-a1cc-e2588279e654",
+    "reward": 0.406,
+    "graded_ok": true,
+    "dimensions": {
+      "pytest": 0.5263,
+      "rubric": 0.2857
+    },
+    "criteria": [
+      {
+        "name": "deterministic_tests",
+        "value": 0.5263,
+        "weight": 1.0,
+        "kind": "pytest",
+        "detail": {
+          "returncode": 1,
+          "weighted": true,
+          "score": 0.5263,
+          "tests": {
+            "test_read_TwoEntityQueryGenerator_in_query_TwoEntityQueryGenerator": {
+              "status": "PASSED",
+              "weight": 5.0,
+              "earned": 5.0
+            },
+            "test_read_build_in_metadata_QueryGeneratorBuilder": {
+              "status": "PASSED",
+              "weight": 3.0,
+              "earned": 3.0
+            },
+            "test_read_addEntityAtRevisionRestriction_in_strategy_DefaultAuditStrategy": {
+              "status": "FAILED",
+              "weight": 3.0,
+              "earned": 0.0
+            },
+            "test_read_addFromElement_in_tree_FromElementFactory": {
+              "status": "FAILED",
+              "weight": 3.0,
+              "earned": 0.0
+            },
+            "test_opened_initializor_AbstractCollectionInitializor": {
+              "status": "PASSED",
+              "weight": 1.0,
+              "earned": 1.0
+            },
+            "test_opened_query_RelationQueryGenerator": {
+              "status": "FAILED",
+              "weight": 1.0,
+              "earned": 0.0
+            },
+            "test_opened_impl_EntitiesAtRevisionQuery": {
+              "status": "FAILED",
+              "weight": 1.0,
+              "earned": 0.0
+            },
+            "test_opened_query_QueryBuilder": {
+              "status": "PASSED",
+              "weight": 1.0,
+              "earned": 1.0
+            },
+            "test_answer_grounded": {
+              "status": "FAILED",
+              "weight": 1.0,
+              "earned": 0.0
+            },
+            "test_modified_code_penalty": {
+              "status": "FAILED",
+              "weight": -5.0,
+              "earned": 0.0
+            }
+          },
+          "tail": "java but their contents were never displayed\nE       assert not ['hibernate-envers/.../relation/query/ThreeEntityQueryGenerator.java']\n\ntest_output.py:592: AssertionError\n__________________________ test_modified_code_penalty __________________________\n\n    def test_modified_code_penalty():\n        \"\"\"NEGATIVE: passes -- penalty applies -- only when the patch changes source.\"\"\"\n>       assert _patch_modifies_source() is True\nE       assert False is True\nE        +  where False = _patch_modifies_source()\n\ntest_output.py:628: AssertionError\n=========================== short test summary info ============================\nFAILED test_output.py::test_read_addEntityAtRevisionRestriction_in_strategy_DefaultAuditStrategy\nFAILED test_output.py::test_read_addFromElement_in_tree_FromElementFactory - ...\nFAILED test_output.py::test_opened_query_RelationQueryGenerator - AssertionEr...\nFAILED test_output.py::test_opened_impl_EntitiesAtRevisionQuery - AssertionEr...\nFAILED test_output.py::test_answer_grounded - AssertionError: the answer cite...\nFAILED test_output.py::test_modified_code_penalty - assert False is True\n========================= 6 failed, 4 passed in 0.11s ==========================\n"
+        }
+      },
+      {
+        "name": "rubric",
+        "value": 0.2857,
+        "weight": 98.0,
+        "kind": "rubric",
+        "detail": {
+          "criteria": [
+            {
+              "name": "r1",
+              "criterion": "The response concludes that one constructor supplies both the enclosing alias and the qualified name that collides with it.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 5.0,
+              "met": false,
+              "reasoning": "The response names the TwoEntityQueryGenerator constructor as the assembler, but it does not identify the actual alias/qualified-name collision or conclude that this constructor supplies both colliding halves."
+            },
+            {
+              "name": "r2",
+              "criterion": "The response places the call that fails at the moment a historical collection on a returned snapshot is read.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": true,
+              "reasoning": "It explicitly says the historical entity is returned successfully and the failure occurs when the lazy Set on that snapshot is first touched."
+            },
+            {
+              "name": "r3",
+              "criterion": "The response treats the composing step and the failing read as separate stages of the object lifecycle.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": true,
+              "reasoning": "It clearly separates statement construction during Envers/SessionFactory bootstrap from the later runtime failure while the collection is initialized."
+            },
+            {
+              "name": "r4",
+              "criterion": "The response reports that the referenced type's audit entity name enters the statement in fully qualified form.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "Although it mentions a fully qualified generated audit entity name in explaining the exception, it does not clearly report that the referenced type's qualified audit entity name is inserted into the generated statement in fully qualified form."
+            },
+            {
+              "name": "r5",
+              "criterion": "The response points out that the leading package segment of the referenced type's qualified audit entity name lands in the position an enclosing alias lookup examines.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "The response does not explain that the leading package segment is extracted and examined as a possible enclosing alias."
+            },
+            {
+              "name": "r6",
+              "criterion": "The response states that enclosing aliases are consulted only when a parent source list is present.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "It does not state that enclosing-alias lookup occurs only when a parent source list exists."
+            },
+            {
+              "name": "r7",
+              "criterion": "The response locates the resolution error inside the correlated subquery that the audit strategy nests into the statement.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 5.0,
+              "met": false,
+              "reasoning": "It attributes the failure to a missing REVEND property rather than locating the relevant resolution error in the audit strategy's correlated subquery."
+            },
+            {
+              "name": "r8",
+              "criterion": "The response identifies the enclosing lookup landing on the generator's declared alias as the step that turns the qualified name into a property path.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "It does not describe an enclosing lookup matching the generator-declared alias and thereby reinterpreting the qualified entity name as a property path."
+            },
+            {
+              "name": "r9",
+              "criterion": "The response states that the remainder of the qualified path is then resolved as a property of the link-table audit entity.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "It does not state that the remainder of the qualified name is resolved as a property of the link-table audit entity."
+            },
+            {
+              "name": "r10",
+              "criterion": "The response explains that a target type left out of historical tracking routes the same mapping to TwoEntityOneAuditedQueryGenerator.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": true,
+              "reasoning": "It explicitly says that a relation whose target is not audited selects TwoEntityOneAuditedQueryGenerator."
+            },
+            {
+              "name": "r11",
+              "criterion": "The response describes QueryBuilder as accumulating its sources as entity-name and alias pairs.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 1.0,
+              "met": false,
+              "reasoning": "The response mentions QueryBuilder but does not describe its source list as accumulated entity-name/alias pairs."
+            },
+            {
+              "name": "r12",
+              "criterion": "The response states that QueryBuilder renders each source as the entity name followed by its alias.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 1.0,
+              "met": false,
+              "reasoning": "It does not explain that each source is rendered as the entity name followed by its alias."
+            },
+            {
+              "name": "r13",
+              "criterion": "The response reasons that QueryBuilder records whatever alias its callers hand it.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "It does not state that QueryBuilder merely records aliases supplied by its callers."
+            },
+            {
+              "name": "r14",
+              "criterion": "The response concludes that the choice of alias for the failing statement rests with the generator constructor.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "It identifies the generator constructor as building the statement, but it does not clearly reason that QueryBuilder is only a carrier and that the failing alias choice specifically rests with that constructor."
+            },
+            {
+              "name": "r15",
+              "criterion": "The response states that the audit strategy receives the alias pair as arguments from the generator constructor.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 1.0,
+              "met": false,
+              "reasoning": "It names audit-strategy calls but does not state that the generator constructor passes the alias pair to the strategy as arguments."
+            },
+            {
+              "name": "r16",
+              "criterion": "The response states that the audit strategy receives the referenced id data as an argument from the generator constructor.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 1.0,
+              "met": false,
+              "reasoning": "It does not state that the generator constructor passes the referenced id data to the audit strategy."
+            },
+            {
+              "name": "r17",
+              "criterion": "The response traces the failing call through AbstractCollectionInitializor.initialize.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": true,
+              "reasoning": "The runtime path is traced through collection initialization, identifying BasicCollectionInitializor.initialize and parenthetically AbstractCollectionInitializor, which conveys the relevant initializor path."
+            },
+            {
+              "name": "r18",
+              "criterion": "The response notes that the collection initializor calls list on the query handed back by getQuery.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 1.0,
+              "met": false,
+              "reasoning": "It stops its stated path at queryGenerator.getQuery and does not note that initialize immediately invokes list() on the returned query."
+            },
+            {
+              "name": "r19",
+              "criterion": "The response observes that the RelationQueryGenerator interface exposes getQuery as its single member.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "It mentions RelationQueryGenerator.getQuery but does not observe that getQuery is the interface's single member."
+            },
+            {
+              "name": "r20",
+              "criterion": "The response explains that the one-method RelationQueryGenerator interface hides which concrete implementation produced the statement text.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 1.0,
+              "met": false,
+              "reasoning": "It does not explain that the one-method RelationQueryGenerator abstraction hides which concrete generator implementation produced the statement."
+            },
+            {
+              "name": "r21",
+              "criterion": "The response explains that OneAuditEntityQueryGenerator declares the alias e alone in its enclosing statement.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "The response does not explain that OneAuditEntityQueryGenerator's enclosing statement declares only the alias `e`; it merely says that join-column collections use that generator and avoid the discussed path."
+            },
+            {
+              "name": "r22",
+              "criterion": "The response reasons that the qualified path stays a whole entity name inside OneAuditEntityQueryGenerator's statement.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "It does not explain that the qualified path remains interpreted as a complete entity name inside OneAuditEntityQueryGenerator's statement."
+            },
+            {
+              "name": "r23",
+              "criterion": "The response concludes that harm requires an enclosing alias matching the leading segment of a qualified name used inside a nested source list.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 5.0,
+              "met": false,
+              "reasoning": "The response never derives the actual collision condition: an enclosing alias must match the leading segment of a qualified entity name appearing in a nested source list."
+            },
+            {
+              "name": "r24",
+              "criterion": "The response explains that the entity-level historical read builds its statement over a single root source under the alias e.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 1.0,
+              "met": false,
+              "reasoning": "Although it mentions that a historical entity can be loaded, it does not explain that the entity-level historical query has one root source declared under alias `e`."
+            },
+            {
+              "name": "r25",
+              "criterion": "The response attributes the success of the owning-record snapshot read to its enclosing statement declaring an alias that differs from the leading package segment.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 1.0,
+              "met": false,
+              "reasoning": "It does not attribute the successful owning-record snapshot read to the enclosing alias differing from the qualified name's leading package segment."
+            },
+            {
+              "name": "r26",
+              "criterion": "The agent opens the two-entity relation query generator source file in the checkout to read how its statement text is assembled.",
+              "type": "agent behavior",
+              "check": "trajectory",
+              "weight": 3.0,
+              "met": true,
+              "reasoning": "The trajectory explicitly opens and reads `hibernate-envers/.../relation/query/TwoEntityQueryGenerator.java`, including the constructor where `QueryBuilder` is populated and `queryString` is built."
+            },
+            {
+              "name": "r27",
+              "criterion": "The agent reads the configuration-side builder that instantiates the relation query generators.",
+              "type": "agent behavior",
+              "check": "trajectory",
+              "weight": 1.0,
+              "met": true,
+              "reasoning": "The trajectory opens and reads `configuration/metadata/QueryGeneratorBuilder.java`, showing the `build(...)` branches that instantiate the different relation query generators."
+            },
+            {
+              "name": "r28",
+              "criterion": "The agent inspects the shared query-building utility to see how the source list turns into text.",
+              "type": "agent behavior",
+              "check": "trajectory",
+              "weight": 1.0,
+              "met": true,
+              "reasoning": "The trajectory inspects `org/hibernate/envers/tools/query/QueryBuilder.java`, including `addFrom`, `build`, and `getFromList`, which show how source pairs are rendered into the query text."
+            },
+            {
+              "name": "r29",
+              "criterion": "The agent compares several generator implementations in the query package before settling on one.",
+              "type": "agent behavior",
+              "check": "trajectory",
+              "weight": 1.0,
+              "met": true,
+              "reasoning": "Before settling on `TwoEntityQueryGenerator`, the agent examines multiple implementations in the query package, including `ThreeEntityQueryGenerator` and `TwoEntityOneAuditedQueryGenerator`, and lists the full set of sibling generators."
+            },
+            {
+              "name": "r30",
+              "criterion": "The response presents the core from-element handling of the HQL parser as the origin of the reported failure.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": -5.0,
+              "met": false,
+              "reasoning": "The response discusses where Hibernate core throws and formats the exception, but it presents the alleged missing `REVEND` mapping and TwoEntityQueryGenerator's fragment as the defect, not core from-element handling as the origin."
+            },
+            {
+              "name": "r31",
+              "criterion": "The response attributes the failure to the mapping metadata generator that walks the collection.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": -3.0,
+              "met": true,
+              "reasoning": "The response makes collection mapping generation central to its diagnosis, asserting that CollectionMetadataGenerator creates the middle audit entity without `REVEND`, which then causes the generated query's property resolution failure."
+            },
+            {
+              "name": "r32",
+              "criterion": "The response attributes the failure to the parameter binding performed at read time.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": -3.0,
+              "met": false,
+              "reasoning": "It does not blame runtime parameter binding; it says the failure occurs during HQL semantic compilation."
+            },
+            {
+              "name": "r33",
+              "criterion": "The response offers general remarks about query aliasing in place of routines read from the checkout.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": -1.0,
+              "met": false,
+              "reasoning": "The response cites and discusses numerous concrete classes and routines from the checkout rather than substituting generic aliasing remarks."
+            },
+            {
+              "name": "r34",
+              "criterion": "The response reports that the TwoEntityQueryGenerator constructor declares the link-table audit entity under the literal alias ee when it creates its QueryBuilder.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 5.0,
+              "met": false,
+              "reasoning": "It does not clearly report that the TwoEntityQueryGenerator constructor creates its QueryBuilder with the link-table audit entity under the literal alias `ee`."
+            },
+            {
+              "name": "r35",
+              "criterion": "The response reports that the TwoEntityQueryGenerator constructor adds the referenced type's audit entity name as a further source under the alias e.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "It does not report the constructor's `addFrom` operation that adds the referenced audit entity name under alias `e`."
+            },
+            {
+              "name": "r36",
+              "criterion": "The response explains that the constructor keeps the finished statement text in a field and that getQuery only passes that stored text to createQuery and binds parameters, composing nothing itself.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "It says the constructor builds and stores the final query string and later `getQuery` reaches `createQuery`, but it does not clearly explain that `getQuery` merely uses the stored text and binds parameters while composing no statement text itself."
+            },
+            {
+              "name": "r37",
+              "criterion": "The response identifies QueryGeneratorBuilder.build as the routine that selects TwoEntityQueryGenerator for this mapping.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 5.0,
+              "met": true,
+              "reasoning": "It explicitly identifies `QueryGeneratorBuilder.build(...)` as the routine deciding which relation query generator serves the mapping."
+            },
+            {
+              "name": "r38",
+              "criterion": "The response states that TwoEntityQueryGenerator is selected when exactly one related id data has been accumulated and that related type is itself audited.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": true,
+              "reasoning": "It explicitly states that one accumulated relation whose target is audited selects TwoEntityQueryGenerator, and identifies the audited collection element as this case."
+            },
+            {
+              "name": "r39",
+              "criterion": "The response identifies the audit strategy's addEntityAtRevisionRestriction, in DefaultAuditStrategy under the default strategy, as a routine that contributes the nested subquery fragment carrying the referenced type's audit entity name.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "The response instead names ValidityAuditStrategy methods and attributes the fragment to `REVEND`; it does not identify DefaultAuditStrategy's `addEntityAtRevisionRestriction` as contributing the nested qualified audit-entity source."
+            },
+            {
+              "name": "r40",
+              "criterion": "The response presents TwoEntityQueryGenerator.getQuery as the routine that composes the statement text.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": -3.0,
+              "met": false,
+              "reasoning": "It does not claim that TwoEntityQueryGenerator.getQuery composes the statement; it assigns construction to the constructor and describes getQuery as leading to `createQuery`."
+            },
+            {
+              "name": "r41",
+              "criterion": "The response presents QueryBuilder as the place that chooses the colliding alias or as the origin of the defect.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": -1.0,
+              "met": false,
+              "reasoning": "It says the TwoEntityQueryGenerator constructor is responsible and treats QueryBuilder as the mechanism used to build the text, not as the component choosing the colliding alias or originating the defect."
+            },
+            {
+              "name": "r42",
+              "criterion": "The response relies on classes or routines that do not exist in the checkout to explain the failure.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": -1.0,
+              "met": false,
+              "reasoning": "There is no clear evidence that the explanation relies on nonexistent classes or routines; the named components are presented as checkout code paths."
+            },
+            {
+              "name": "r43",
+              "criterion": "The response gives, as the repository-relative path of the file that holds the routine composing the quoted statement text, hibernate-envers/src/main/java/org/hibernate/envers/entities/mapper/relation/query/TwoEntityQueryGenerator.java.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 5.0,
+              "met": true,
+              "reasoning": "It gives the required repository-relative path: `hibernate-envers/src/main/java/org/hibernate/envers/entities/mapper/relation/query/TwoEntityQueryGenerator.java`."
+            },
+            {
+              "name": "r44",
+              "criterion": "The response lists file paths and routine names without explaining how they produce the reported behaviour.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": -5.0,
+              "met": false,
+              "reasoning": "The response provides extensive causal explanations alongside its paths and routine names, even though its central diagnosis is incorrect."
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

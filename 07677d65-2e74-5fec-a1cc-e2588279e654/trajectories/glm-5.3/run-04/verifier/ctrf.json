@@ -1,0 +1,79 @@
+{
+  "results": {
+    "tool": {
+      "name": "grade"
+    },
+    "summary": {
+      "tests": 10,
+      "passed": 7,
+      "failed": 3,
+      "pending": 0,
+      "skipped": 0,
+      "other": 0,
+      "start": 0,
+      "stop": 0
+    },
+    "tests": [
+      {
+        "name": "test_read_TwoEntityQueryGenerator_in_query_TwoEntityQueryGenerator",
+        "status": "passed",
+        "weight": 5.0,
+        "earned": 5.0
+      },
+      {
+        "name": "test_read_build_in_metadata_QueryGeneratorBuilder",
+        "status": "passed",
+        "weight": 3.0,
+        "earned": 3.0
+      },
+      {
+        "name": "test_read_addEntityAtRevisionRestriction_in_strategy_DefaultAuditStrategy",
+        "status": "passed",
+        "weight": 3.0,
+        "earned": 3.0
+      },
+      {
+        "name": "test_read_addFromElement_in_tree_FromElementFactory",
+        "status": "failed",
+        "weight": 3.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_opened_initializor_AbstractCollectionInitializor",
+        "status": "passed",
+        "weight": 1.0,
+        "earned": 1.0
+      },
+      {
+        "name": "test_opened_query_RelationQueryGenerator",
+        "status": "passed",
+        "weight": 1.0,
+        "earned": 1.0
+      },
+      {
+        "name": "test_opened_impl_EntitiesAtRevisionQuery",
+        "status": "passed",
+        "weight": 1.0,
+        "earned": 1.0
+      },
+      {
+        "name": "test_opened_query_QueryBuilder",
+        "status": "passed",
+        "weight": 1.0,
+        "earned": 1.0
+      },
+      {
+        "name": "test_answer_grounded",
+        "status": "failed",
+        "weight": 1.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_modified_code_penalty",
+        "status": "failed",
+        "weight": -5.0,
+        "earned": 0.0
+      }
+    ]
+  }
+}

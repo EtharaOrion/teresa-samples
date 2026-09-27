@@ -1,0 +1,211 @@
+{
+  "instance_id": "07677d65-2e74-5fec-a1cc-e2588279e654",
+  "model": "claude-opus-5",
+  "n_runs": 8,
+  "agent": "openhands",
+  "agent_version": "0.62.0",
+  "dimensions": {
+    "pytest": {
+      "mean": 0.7237,
+      "median": 0.7105,
+      "min": 0.6842,
+      "max": 0.8421,
+      "stdev": 0.0545,
+      "n": 8
+    },
+    "rubric": {
+      "mean": 0.3444,
+      "median": 0.3418,
+      "min": 0.2857,
+      "max": 0.4082,
+      "stdev": 0.0389,
+      "n": 8
+    },
+    "reward": {
+      "mean": 0.5341,
+      "median": 0.5292,
+      "min": 0.485,
+      "max": 0.5894,
+      "stdev": 0.0332,
+      "n": 8
+    }
+  },
+  "runs": [
+    {
+      "run": "run-01",
+      "harbor_trial": "07677d65-2e74-5fec-a1cc-be440fea__a7WfebV",
+      "pytest": 0.7368421052631579,
+      "rubric": 0.3163265306122449,
+      "reward": 0.5266,
+      "tokens": {
+        "input_fresh": 150,
+        "cache_read": 6179511,
+        "cache_write": 474065,
+        "output": 501566,
+        "reasoning": 92354
+      }
+    },
+    {
+      "run": "run-02",
+      "harbor_trial": "07677d65-2e74-5fec-a1cc-be440fea__xFhQ5nk",
+      "pytest": 0.8421052631578947,
+      "rubric": 0.336734693877551,
+      "reward": 0.5894,
+      "tokens": {
+        "input_fresh": 216,
+        "cache_read": 10392324,
+        "cache_write": 1893683,
+        "output": 1303056,
+        "reasoning": 239590
+      }
+    },
+    {
+      "run": "run-03",
+      "harbor_trial": "07677d65-2e74-5fec-a1cc-be440fea__JV5hLfL",
+      "pytest": 0.6842105263157895,
+      "rubric": 0.2857142857142857,
+      "reward": 0.485,
+      "tokens": {
+        "input_fresh": 204,
+        "cache_read": 9349939,
+        "cache_write": 973873,
+        "output": 1140898,
+        "reasoning": 206313
+      }
+    },
+    {
+      "run": "run-04",
+      "harbor_trial": "07677d65-2e74-5fec-a1cc-be440fea__jbXBHfC",
+      "pytest": 0.6842105263157895,
+      "rubric": 0.3469387755102041,
+      "reward": 0.5156,
+      "tokens": {
+        "input_fresh": 164,
+        "cache_read": 7215891,
+        "cache_write": 151495,
+        "output": 650632,
+        "reasoning": 113370
+      }
+    },
+    {
+      "run": "run-05",
+      "harbor_trial": "07677d65-2e74-5fec-a1cc-be440fea__AoUxKmo",
+      "pytest": 0.7368421052631579,
+      "rubric": 0.40816326530612246,
+      "reward": 0.5725,
+      "tokens": {
+        "input_fresh": 164,
+        "cache_read": 7342294,
+        "cache_write": 582258,
+        "output": 861950,
+        "reasoning": 153989
+      }
+    },
+    {
+      "run": "run-06",
+      "harbor_trial": "07677d65-2e74-5fec-a1cc-be440fea__pjG9ChB",
+      "pytest": 0.6842105263157895,
+      "rubric": 0.3877551020408163,
+      "reward": 0.536,
+      "tokens": {
+        "input_fresh": 180,
+        "cache_read": 8537715,
+        "cache_write": 311686,
+        "output": 985101,
+        "reasoning": 179292
+      }
+    },
+    {
+      "run": "run-07",
+      "harbor_trial": "07677d65-2e74-5fec-a1cc-be440fea__eiPVWTD",
+      "pytest": 0.6842105263157895,
+      "rubric": 0.3469387755102041,
+      "reward": 0.5156,
+      "tokens": {
+        "input_fresh": 144,
+        "cache_read": 5337958,
+        "cache_write": 775946,
+        "output": 764007,
+        "reasoning": 139511
+      }
+    },
+    {
+      "run": "run-08",
+      "harbor_trial": "07677d65-2e74-5fec-a1cc-be440fea__65NiA5f",
+      "pytest": 0.7368421052631579,
+      "rubric": 0.32653061224489793,
+      "reward": 0.5317,
+      "tokens": {
+        "input_fresh": 158,
+        "cache_read": 6042673,
+        "cache_write": 365079,
+        "output": 719529,
+        "reasoning": 132226
+      }
+    }
+  ],
+  "pass_at_k": {
+    "threshold": 0.7,
+    "note": "computed here; harbor's requires binary 0/1 rewards",
+    "k": {
+      "1": 0.0,
+      "2": 0.0,
+      "4": 0.0,
+      "8": 0.0
+    }
+  },
+  "harbor_ran_on": {
+    "07677d65-2e74-5fec-a1cc-be440fea__a7WfebV": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "07677d65-2e74-5fec-a1cc-be440fea__xFhQ5nk": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "07677d65-2e74-5fec-a1cc-be440fea__JV5hLfL": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "07677d65-2e74-5fec-a1cc-be440fea__jbXBHfC": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "07677d65-2e74-5fec-a1cc-be440fea__AoUxKmo": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "07677d65-2e74-5fec-a1cc-be440fea__pjG9ChB": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "07677d65-2e74-5fec-a1cc-be440fea__eiPVWTD": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "07677d65-2e74-5fec-a1cc-be440fea__65NiA5f": {
+      "version": "unknown",
+      "is_editable": false
+    }
+  },
+  "tokens": {
+    "input_fresh": 1380,
+    "cache_read": 60398305,
+    "cache_write": 5528085,
+    "output": 6926739,
+    "reasoning": 1256645
+  },
+  "cost": {
+    "basis": "derived at list price; inference ran on a subscription bridge and was not metered per call, so harbor records cost_usd: null",
+    "source": "litellm.model_cost",
+    "usd_per_mtok": {
+      "input": 5.0,
+      "cache_read": 0.5,
+      "cache_write": 6.25,
+      "output": 25.0
+    },
+    "usd": 237.9251,
+    "without_cache_usd": 502.8073,
+    "cache_saving_usd": 264.8823
+  }
+}

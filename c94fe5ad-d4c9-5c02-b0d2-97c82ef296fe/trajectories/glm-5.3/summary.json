@@ -1,0 +1,201 @@
+{
+  "instance_id": "c94fe5ad-d4c9-5c02-b0d2-97c82ef296fe",
+  "model": "glm-5.3",
+  "n_runs": 8,
+  "agent": "openhands",
+  "agent_version": "0.62.0",
+  "dimensions": {
+    "pytest": {
+      "mean": 0.7697,
+      "median": 0.7895,
+      "min": 0.5263,
+      "max": 0.9474,
+      "stdev": 0.1256,
+      "n": 8
+    },
+    "rubric": {
+      "mean": 0.3346,
+      "median": 0.3309,
+      "min": 0.0882,
+      "max": 0.6176,
+      "stdev": 0.1922,
+      "n": 8
+    },
+    "reward": {
+      "mean": 0.5521,
+      "median": 0.5143,
+      "min": 0.3862,
+      "max": 0.7825,
+      "stdev": 0.1254,
+      "n": 8
+    }
+  },
+  "runs": [
+    {
+      "run": "run-01",
+      "harbor_trial": "c94fe5ad-d4c9-5c02-b0d2-112c78b8__eqGuiyv",
+      "pytest": 0.7894736842105263,
+      "rubric": 0.1323529411764706,
+      "reward": 0.4609,
+      "tokens": {
+        "input_fresh": 4366,
+        "cache_read": 8706176,
+        "cache_write": 124160,
+        "output": 71079,
+        "reasoning": 7008
+      }
+    },
+    {
+      "run": "run-02",
+      "harbor_trial": "c94fe5ad-d4c9-5c02-b0d2-112c78b8__Drz3i5o",
+      "pytest": 0.5263157894736842,
+      "rubric": 0.5147058823529411,
+      "reward": 0.5205,
+      "tokens": {
+        "input_fresh": 3962,
+        "cache_read": 10584256,
+        "cache_write": 156928,
+        "output": 84705,
+        "reasoning": 3108
+      }
+    },
+    {
+      "run": "run-03",
+      "harbor_trial": "c94fe5ad-d4c9-5c02-b0d2-112c78b8__qt2BT9j",
+      "pytest": 0.8421052631578947,
+      "rubric": 0.47058823529411764,
+      "reward": 0.6563,
+      "tokens": {
+        "input_fresh": 3696,
+        "cache_read": 5969536,
+        "cache_write": 90560,
+        "output": 65132,
+        "reasoning": 33727
+      }
+    },
+    {
+      "run": "run-04",
+      "harbor_trial": "c94fe5ad-d4c9-5c02-b0d2-112c78b8__irgxC5c",
+      "pytest": 0.8421052631578947,
+      "rubric": 0.38235294117647056,
+      "reward": 0.6122,
+      "tokens": {
+        "input_fresh": 1427,
+        "cache_read": 1337792,
+        "cache_write": 41792,
+        "output": 36148,
+        "reasoning": 25975
+      }
+    },
+    {
+      "run": "run-05",
+      "harbor_trial": "c94fe5ad-d4c9-5c02-b0d2-112c78b8__LZ797wb",
+      "pytest": 0.6842105263157895,
+      "rubric": 0.08823529411764706,
+      "reward": 0.3862,
+      "tokens": {
+        "input_fresh": 1944,
+        "cache_read": 1429440,
+        "cache_write": 31872,
+        "output": 30742,
+        "reasoning": 24545
+      }
+    },
+    {
+      "run": "run-06",
+      "harbor_trial": "c94fe5ad-d4c9-5c02-b0d2-112c78b8__Kh5eD3N",
+      "pytest": 0.7368421052631579,
+      "rubric": 0.27941176470588236,
+      "reward": 0.5081,
+      "tokens": {
+        "input_fresh": 4491,
+        "cache_read": 9267648,
+        "cache_write": 104576,
+        "output": 246896,
+        "reasoning": 215209
+      }
+    },
+    {
+      "run": "run-07",
+      "harbor_trial": "c94fe5ad-d4c9-5c02-b0d2-112c78b8__btS5Tym",
+      "pytest": 0.7894736842105263,
+      "rubric": 0.19117647058823528,
+      "reward": 0.4903,
+      "tokens": {
+        "input_fresh": 2305,
+        "cache_read": 2436352,
+        "cache_write": 104896,
+        "output": 43864,
+        "reasoning": 32469
+      }
+    },
+    {
+      "run": "run-08",
+      "harbor_trial": "c94fe5ad-d4c9-5c02-b0d2-112c78b8__CvLVYbJ",
+      "pytest": 0.9473684210526315,
+      "rubric": 0.6176470588235294,
+      "reward": 0.7825,
+      "tokens": {
+        "input_fresh": 4582,
+        "cache_read": 10087872,
+        "cache_write": 264192,
+        "output": 108666,
+        "reasoning": 52052
+      }
+    }
+  ],
+  "pass_at_k": {
+    "threshold": 0.7,
+    "note": "computed here; harbor's requires binary 0/1 rewards",
+    "k": {
+      "1": 0.125,
+      "2": 0.25,
+      "4": 0.5,
+      "8": 1.0
+    }
+  },
+  "harbor_ran_on": {
+    "c94fe5ad-d4c9-5c02-b0d2-112c78b8__LZ797wb": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "c94fe5ad-d4c9-5c02-b0d2-112c78b8__btS5Tym": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "c94fe5ad-d4c9-5c02-b0d2-112c78b8__irgxC5c": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "c94fe5ad-d4c9-5c02-b0d2-112c78b8__qt2BT9j": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "c94fe5ad-d4c9-5c02-b0d2-112c78b8__CvLVYbJ": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "c94fe5ad-d4c9-5c02-b0d2-112c78b8__Drz3i5o": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "c94fe5ad-d4c9-5c02-b0d2-112c78b8__Kh5eD3N": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "c94fe5ad-d4c9-5c02-b0d2-112c78b8__eqGuiyv": {
+      "version": "unknown",
+      "is_editable": false
+    }
+  },
+  "tokens": {
+    "input_fresh": 26773,
+    "cache_read": 49819072,
+    "cache_write": 918976,
+    "output": 687232,
+    "reasoning": 394093
+  },
+  "cost": {
+    "basis": "unpriced: no entry for 'glm-5.3' in litellm.model_cost"
+  }
+}

@@ -1,0 +1,22 @@
+[info] history: 219 events from events
+  test_answer_grounded                           FAILED  w=3
+  test_modified_code_penalty                     FAILED  w=-5
+  test_opened_fulfillment_batch                  FAILED  w=1
+  test_opened_helpers                            PASSED  w=1
+  test_opened_mod                                PASSED  w=1
+  test_opened_mod_utils                          FAILED  w=1
+  test_opened_requestor_pricing                  PASSED  w=1
+  test_opened_router                             PASSED  w=1
+  test_opened_router_policy                      FAILED  w=1
+  test_opened_selector                           FAILED  w=1
+  test_opened_service                            PASSED  w=1
+  test_opened_types                              PASSED  w=1
+  test_read_calculate_exec_limits_in_mod         PASSED  w=3
+  test_read_estimate_gas_to_fulfill_in_helpers   FAILED  w=3
+  test_read_estimate_gas_to_fulfill_in_mod       PASSED  w=5
+  test_read_price_order_in_mod                   PASSED  w=3
+  test_read_prove_and_update_db_in_service       FAILED  w=3
+  test_read_submission_path_for_risc0_selector_in_lib FAILED  w=3
+  test_searched_groth16_verify_gas_estimate      FAILED  w=1
+[ok] pytest=0.5000  (process channel only -- rubric scores the answer)
+{"pytest": 0.5, "rubric": 0.0, "reward": 0.25}

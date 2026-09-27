@@ -1,0 +1,143 @@
+{
+    "id": "de0b41b3-f08b-47eb-a726-6effdc8e12c0",
+    "task_name": "teresa/c94fe5ad-d4c9-5c02-b0d2-97c82ef296fe",
+    "trial_name": "c94fe5ad-d4c9-5c02-b0d2-112c78b8__s75uDco",
+    "trial_uri": "file://<HOST>/c94fe5ad-d4c9-5c02-b0d2-112c78b8__s75uDco",
+    "task_id": {
+        "path": "<HOST>"
+    },
+    "source": null,
+    "task_checksum": "27698ad5e61e5ca40f041d7a046c5fb73acbe11787c8129413e4b12bdf61e5dc",
+    "config": {
+        "task": {
+            "path": "<HOST>",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "c94fe5ad-d4c9-5c02-b0d2-112c78b8__s75uDco",
+        "trials_dir": "<HOST>",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": 6.0,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "openhands",
+            "import_path": null,
+            "model_name": "anthropic/claude-opus-5",
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {
+                "version": "0.62.0",
+                "python_version": 3.12,
+                "max_iterations": 200,
+                "model_info": {
+                    "max_output_tokens": 32768,
+                    "max_input_tokens": 200000
+                },
+                "num_retries": 10,
+                "temperature": 1.0,
+                "caching_prompt": true
+            },
+            "env": {
+                "LLM_TIMEOUT": "900",
+                "LLM_NATIVE_TOOL_CALLING": "true",
+                "LLM_RETRY_MIN_WAIT": "60",
+                "LLM_RETRY_MAX_WAIT": "1800",
+                "LLM_RETRY_MULTIPLIER": "2.0",
+                "UV_DEFAULT_INDEX": "http://172.17.0.1:8799/simple/",
+                "UV_INDEX_URL": "http://172.17.0.1:8799/simple/",
+                "ANTHROPIC_BASE_URL": "http://172.17.0.1:8765",
+                "ANTHROPIC_API_KEY": "inte****ret"
+            },
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "stream": false,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "f6ab0cd8-d35f-46cd-8ad2-8f800e7ae35b",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "openhands",
+        "version": "0.62.0",
+        "model_info": {
+            "name": "claude-opus-5",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 19327402,
+        "n_cache_tokens": 18765702,
+        "n_output_tokens": 1362504,
+        "cost_usd": null,
+        "model_usage": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "pytest": 0.7895,
+            "rubric": 0.2353,
+            "reward": 0.5124
+        }
+    },
+    "verifier_environment_mode": "shared",
+    "exception_info": null,
+    "started_at": "2026-09-20T04:16:29.680322Z",
+    "finished_at": "2026-09-20T08:59:17.244827Z",
+    "environment_setup": {
+        "started_at": "2026-09-20T04:16:29.706649Z",
+        "finished_at": "2026-09-20T04:16:34.137730Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-09-20T04:16:34.137776Z",
+        "finished_at": "2026-09-20T04:17:08.445422Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-09-20T04:17:08.445569Z",
+        "finished_at": "2026-09-20T08:58:57.891435Z"
+    },
+    "verifier": {
+        "started_at": "2026-09-20T08:58:59.574088Z",
+        "finished_at": "2026-09-20T08:59:00.243587Z"
+    },
+    "step_results": null
+}

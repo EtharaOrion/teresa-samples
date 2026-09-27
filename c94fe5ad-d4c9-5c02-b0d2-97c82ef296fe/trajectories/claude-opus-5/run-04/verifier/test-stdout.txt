@@ -1,0 +1,17 @@
+[info] history: 357 events from events
+  test_answer_grounded                           FAILED  w=1
+  test_modified_code_penalty                     FAILED  w=-5
+  test_opened_class_properties_mod               PASSED  w=1
+  test_opened_classes_constructor                PASSED  w=1
+  test_opened_classes_mod                        PASSED  w=1
+  test_opened_decorators_mod                     FAILED  w=1
+  test_opened_src_class_fields_use_set           FAILED  w=1
+  test_opened_src_constructor                    PASSED  w=1
+  test_opened_src_decorator_impl                 FAILED  w=1
+  test_opened_src_lib                            PASSED  w=1
+  test_opened_src_private_in_object              FAILED  w=1
+  test_opened_src_source_map                     PASSED  w=1
+  test_read_default_constructor_in_src_lib       PASSED  w=5
+  test_read_srcmap_in_src_macros                 PASSED  w=3
+[ok] pytest=0.7368  (process channel only -- rubric scores the answer)
+{"pytest": 0.7368, "rubric": 0.3088, "reward": 0.5228}

@@ -1,0 +1,201 @@
+{
+  "instance_id": "07677d65-2e74-5fec-a1cc-e2588279e654",
+  "model": "glm-5.3",
+  "n_runs": 8,
+  "agent": "openhands",
+  "agent_version": "0.62.0",
+  "dimensions": {
+    "pytest": {
+      "mean": 0.6513,
+      "median": 0.6579,
+      "min": 0.5263,
+      "max": 0.7895,
+      "stdev": 0.093,
+      "n": 8
+    },
+    "rubric": {
+      "mean": 0.2423,
+      "median": 0.2449,
+      "min": 0.1429,
+      "max": 0.3776,
+      "stdev": 0.0729,
+      "n": 8
+    },
+    "reward": {
+      "mean": 0.4468,
+      "median": 0.4616,
+      "min": 0.3346,
+      "max": 0.5309,
+      "stdev": 0.0619,
+      "n": 8
+    }
+  },
+  "runs": [
+    {
+      "run": "run-01",
+      "harbor_trial": "07677d65-2e74-5fec-a1cc-be440fea__QcDi5B5",
+      "pytest": 0.7368421052631579,
+      "rubric": 0.22448979591836735,
+      "reward": 0.4807,
+      "tokens": {
+        "input_fresh": 1342,
+        "cache_read": 1058688,
+        "cache_write": 39744,
+        "output": 51860,
+        "reasoning": 44135
+      }
+    },
+    {
+      "run": "run-02",
+      "harbor_trial": "07677d65-2e74-5fec-a1cc-be440fea__2JbfHGE",
+      "pytest": 0.5263157894736842,
+      "rubric": 0.2857142857142857,
+      "reward": 0.406,
+      "tokens": {
+        "input_fresh": 1376,
+        "cache_read": 1056512,
+        "cache_write": 34944,
+        "output": 13178,
+        "reasoning": 8124
+      }
+    },
+    {
+      "run": "run-03",
+      "harbor_trial": "07677d65-2e74-5fec-a1cc-be440fea__Jfda7Ev",
+      "pytest": 0.631578947368421,
+      "rubric": 0.1836734693877551,
+      "reward": 0.4076,
+      "tokens": {
+        "input_fresh": 1326,
+        "cache_read": 1140608,
+        "cache_write": 43968,
+        "output": 72406,
+        "reasoning": 61555
+      }
+    },
+    {
+      "run": "run-04",
+      "harbor_trial": "07677d65-2e74-5fec-a1cc-be440fea__JcEkpZp",
+      "pytest": 0.7894736842105263,
+      "rubric": 0.19387755102040816,
+      "reward": 0.4917,
+      "tokens": {
+        "input_fresh": 1941,
+        "cache_read": 2214912,
+        "cache_write": 64064,
+        "output": 78866,
+        "reasoning": 59974
+      }
+    },
+    {
+      "run": "run-05",
+      "harbor_trial": "07677d65-2e74-5fec-a1cc-be440fea__LBhsfn2",
+      "pytest": 0.631578947368421,
+      "rubric": 0.2653061224489796,
+      "reward": 0.4484,
+      "tokens": {
+        "input_fresh": 1839,
+        "cache_read": 1943360,
+        "cache_write": 53952,
+        "output": 47938,
+        "reasoning": 35368
+      }
+    },
+    {
+      "run": "run-06",
+      "harbor_trial": "07677d65-2e74-5fec-a1cc-be440fea__kmCTtMU",
+      "pytest": 0.5263157894736842,
+      "rubric": 0.14285714285714285,
+      "reward": 0.3346,
+      "tokens": {
+        "input_fresh": 1012,
+        "cache_read": 894656,
+        "cache_write": 37120,
+        "output": 26605,
+        "reasoning": 18993
+      }
+    },
+    {
+      "run": "run-07",
+      "harbor_trial": "07677d65-2e74-5fec-a1cc-be440fea__PYpkWoM",
+      "pytest": 0.6842105263157895,
+      "rubric": 0.2653061224489796,
+      "reward": 0.4748,
+      "tokens": {
+        "input_fresh": 1833,
+        "cache_read": 1727424,
+        "cache_write": 40896,
+        "output": 46241,
+        "reasoning": 38689
+      }
+    },
+    {
+      "run": "run-08",
+      "harbor_trial": "07677d65-2e74-5fec-a1cc-be440fea__gTLTEak",
+      "pytest": 0.6842105263157895,
+      "rubric": 0.37755102040816324,
+      "reward": 0.5309,
+      "tokens": {
+        "input_fresh": 2028,
+        "cache_read": 2287040,
+        "cache_write": 58304,
+        "output": 83094,
+        "reasoning": 72344
+      }
+    }
+  ],
+  "pass_at_k": {
+    "threshold": 0.7,
+    "note": "computed here; harbor's requires binary 0/1 rewards",
+    "k": {
+      "1": 0.0,
+      "2": 0.0,
+      "4": 0.0,
+      "8": 0.0
+    }
+  },
+  "harbor_ran_on": {
+    "07677d65-2e74-5fec-a1cc-be440fea__kmCTtMU": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "07677d65-2e74-5fec-a1cc-be440fea__2JbfHGE": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "07677d65-2e74-5fec-a1cc-be440fea__Jfda7Ev": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "07677d65-2e74-5fec-a1cc-be440fea__LBhsfn2": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "07677d65-2e74-5fec-a1cc-be440fea__PYpkWoM": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "07677d65-2e74-5fec-a1cc-be440fea__QcDi5B5": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "07677d65-2e74-5fec-a1cc-be440fea__JcEkpZp": {
+      "version": "unknown",
+      "is_editable": false
+    },
+    "07677d65-2e74-5fec-a1cc-be440fea__gTLTEak": {
+      "version": "unknown",
+      "is_editable": false
+    }
+  },
+  "tokens": {
+    "input_fresh": 12697,
+    "cache_read": 12323200,
+    "cache_write": 372992,
+    "output": 420188,
+    "reasoning": 339182
+  },
+  "cost": {
+    "basis": "unpriced: no entry for 'glm-5.3' in litellm.model_cost"
+  }
+}

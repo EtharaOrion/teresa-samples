@@ -1,0 +1,16 @@
+{
+  "test_read_default_constructor_in_src_lib": 5,
+  "test_read_srcmap_in_src_macros": 3,
+  "test_opened_src_source_map": 1,
+  "test_opened_src_lib": 1,
+  "test_opened_classes_constructor": 1,
+  "test_opened_classes_mod": 1,
+  "test_opened_class_properties_mod": 1,
+  "test_opened_src_private_in_object": 1,
+  "test_opened_src_class_fields_use_set": 1,
+  "test_opened_src_decorator_impl": 1,
+  "test_opened_decorators_mod": 1,
+  "test_opened_src_constructor": 1,
+  "test_answer_grounded": 1,
+  "test_modified_code_penalty": -5
+}

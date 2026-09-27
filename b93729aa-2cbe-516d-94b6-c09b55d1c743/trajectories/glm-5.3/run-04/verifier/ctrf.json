@@ -1,0 +1,133 @@
+{
+  "results": {
+    "tool": {
+      "name": "grade"
+    },
+    "summary": {
+      "tests": 19,
+      "passed": 9,
+      "failed": 10,
+      "pending": 0,
+      "skipped": 0,
+      "other": 0,
+      "start": 0,
+      "stop": 0
+    },
+    "tests": [
+      {
+        "name": "test_read_estimate_gas_to_fulfill_in_mod",
+        "status": "passed",
+        "weight": 5.0,
+        "earned": 5.0
+      },
+      {
+        "name": "test_read_price_order_in_mod",
+        "status": "passed",
+        "weight": 3.0,
+        "earned": 3.0
+      },
+      {
+        "name": "test_read_calculate_exec_limits_in_mod",
+        "status": "passed",
+        "weight": 3.0,
+        "earned": 3.0
+      },
+      {
+        "name": "test_read_estimate_gas_to_fulfill_in_helpers",
+        "status": "failed",
+        "weight": 3.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_read_submission_path_for_risc0_selector_in_lib",
+        "status": "failed",
+        "weight": 3.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_read_prove_and_update_db_in_service",
+        "status": "failed",
+        "weight": 3.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_opened_router",
+        "status": "passed",
+        "weight": 1.0,
+        "earned": 1.0
+      },
+      {
+        "name": "test_opened_router_policy",
+        "status": "failed",
+        "weight": 1.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_opened_types",
+        "status": "passed",
+        "weight": 1.0,
+        "earned": 1.0
+      },
+      {
+        "name": "test_opened_fulfillment_batch",
+        "status": "failed",
+        "weight": 1.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_opened_mod",
+        "status": "passed",
+        "weight": 1.0,
+        "earned": 1.0
+      },
+      {
+        "name": "test_opened_requestor_pricing",
+        "status": "passed",
+        "weight": 1.0,
+        "earned": 1.0
+      },
+      {
+        "name": "test_opened_selector",
+        "status": "failed",
+        "weight": 1.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_opened_service",
+        "status": "passed",
+        "weight": 1.0,
+        "earned": 1.0
+      },
+      {
+        "name": "test_opened_helpers",
+        "status": "passed",
+        "weight": 1.0,
+        "earned": 1.0
+      },
+      {
+        "name": "test_opened_mod_utils",
+        "status": "failed",
+        "weight": 1.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_searched_groth16_verify_gas_estimate",
+        "status": "failed",
+        "weight": 1.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_answer_grounded",
+        "status": "failed",
+        "weight": 3.0,
+        "earned": 0.0
+      },
+      {
+        "name": "test_modified_code_penalty",
+        "status": "failed",
+        "weight": -5.0,
+        "earned": 0.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+schema_version = "1.4"
+
+[[artifacts]]
+source = "/logs/agent/trajectory.json"
+
+[[artifacts]]
+source = "/logs/agent/answer.md"
+
+[[artifacts]]
+source = "/logs/agent/sessions"
+destination = "agent-sessions"
+
+[[artifacts]]
+source = "/logs/agent/completions"
+destination = "agent-completions"
+
+[task]
+version = "1.0.0"
+name = "teresa/b93729aa-2cbe-516d-94b6-c09b55d1c743"
+uuid_v5 = "b93729aa-2cbe-516d-94b6-c09b55d1c743"
+authors = [
+    { name = "Areeb Inam", email = "areeb.inam@ethara.ai" },
+]
+keywords = ["rust", "issue_localization"]
+
+[metadata]
+instance_id = "b93729aa-2cbe-516d-94b6-c09b55d1c743"
+repo = "boundless-xyz/boundless"
+base_commit = "8dab3ba0c959646e422cc80259dbe6e7f331b383"
+language = "rust"
+family = "issue_localization"
+harbor_commit = "cfc54c995e90cd438deb862189a58053b9d89fd3"
+
+[verifier]
+timeout_sec = 600.0
+
+[verifier.env]
+HG_INSTANCE_ID = "b93729aa-2cbe-516d-94b6-c09b55d1c743"
+JUDGE_MODEL = "${JUDGE_MODEL:-}"
+JUDGE_API_KEY = "${JUDGE_API_KEY:-}"
+JUDGE_BASE_URL = "${JUDGE_BASE_URL:-}"
+
+[[verifier.collect]]
+command = "git -C /workspace/boundless-xyz__boundless add -A && git -C /workspace/boundless-xyz__boundless diff --cached > /logs/artifacts/agent.patch"
+
+[agent]
+network_mode = "allowlist"
+allowed_hosts = ["192.168.65.0/24", "172.16.0.0/12"]
+
+[environment]
+network_mode = "public"
+docker_image = "426628337772.dkr.ecr.ap-south-1.amazonaws.com/teresa:b93729aa-2cbe-516d-94b6-c09b55d1c743@sha256:eee93bc400e351087f6260a6deecf9f75670178d5ff65bfbb815e269f2bdf48b"
+build_timeout_sec = 3600.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 20480
+gpus = 0
+os = "linux"

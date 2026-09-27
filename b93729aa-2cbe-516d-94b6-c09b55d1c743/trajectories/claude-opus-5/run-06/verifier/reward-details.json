@@ -1,0 +1,308 @@
+{
+  "b93729aa-2cbe-516d-94b6-c09b55d1c743": {
+    "instance_id": "b93729aa-2cbe-516d-94b6-c09b55d1c743",
+    "reward": 0.5738,
+    "graded_ok": true,
+    "dimensions": {
+      "pytest": 0.8824,
+      "rubric": 0.2653
+    },
+    "criteria": [
+      {
+        "name": "deterministic_tests",
+        "value": 0.8824,
+        "weight": 1.0,
+        "kind": "pytest",
+        "detail": {
+          "returncode": 1,
+          "weighted": true,
+          "score": 0.8824,
+          "tests": {
+            "test_read_estimate_gas_to_fulfill_in_mod": {
+              "status": "PASSED",
+              "weight": 5.0,
+              "earned": 5.0
+            },
+            "test_read_price_order_in_mod": {
+              "status": "PASSED",
+              "weight": 3.0,
+              "earned": 3.0
+            },
+            "test_read_calculate_exec_limits_in_mod": {
+              "status": "PASSED",
+              "weight": 3.0,
+              "earned": 3.0
+            },
+            "test_read_estimate_gas_to_fulfill_in_helpers": {
+              "status": "PASSED",
+              "weight": 3.0,
+              "earned": 3.0
+            },
+            "test_read_submission_path_for_risc0_selector_in_lib": {
+              "status": "PASSED",
+              "weight": 3.0,
+              "earned": 3.0
+            },
+            "test_read_prove_and_update_db_in_service": {
+              "status": "FAILED",
+              "weight": 3.0,
+              "earned": 0.0
+            },
+            "test_opened_router": {
+              "status": "PASSED",
+              "weight": 1.0,
+              "earned": 1.0
+            },
+            "test_opened_router_policy": {
+              "status": "PASSED",
+              "weight": 1.0,
+              "earned": 1.0
+            },
+            "test_opened_types": {
+              "status": "PASSED",
+              "weight": 1.0,
+              "earned": 1.0
+            },
+            "test_opened_fulfillment_batch": {
+              "status": "FAILED",
+              "weight": 1.0,
+              "earned": 0.0
+            },
+            "test_opened_mod": {
+              "status": "PASSED",
+              "weight": 1.0,
+              "earned": 1.0
+            },
+            "test_opened_requestor_pricing": {
+              "status": "PASSED",
+              "weight": 1.0,
+              "earned": 1.0
+            },
+            "test_opened_selector": {
+              "status": "PASSED",
+              "weight": 1.0,
+              "earned": 1.0
+            },
+            "test_opened_service": {
+              "status": "PASSED",
+              "weight": 1.0,
+              "earned": 1.0
+            },
+            "test_opened_helpers": {
+              "status": "PASSED",
+              "weight": 1.0,
+              "earned": 1.0
+            },
+            "test_opened_mod_utils": {
+              "status": "PASSED",
+              "weight": 1.0,
+              "earned": 1.0
+            },
+            "test_searched_groth16_verify_gas_estimate": {
+              "status": "PASSED",
+              "weight": 1.0,
+              "earned": 1.0
+            },
+            "test_answer_grounded": {
+              "status": "PASSED",
+              "weight": 3.0,
+              "earned": 3.0
+            },
+            "test_modified_code_penalty": {
+              "status": "FAILED",
+              "weight": -5.0,
+              "earned": 0.0
+            }
+          },
+          "tail": "ue for _ in _displays_of(files)), \\\n            f'{label} was never displayed (contents shown, not merely listed)'\nE       AssertionError: crates/boundless-market/src/contracts/fulfillment_batch.rs was never displayed (contents shown, not merely listed)\nE       assert False\nE        +  where False = any(<generator object _make_target_test.<locals>.test.<locals>.<genexpr> at 0xffff72a1b4c0>)\n\ntest_output.py:659: AssertionError\n__________________________ test_modified_code_penalty __________________________\n\n    def test_modified_code_penalty():\n        \"\"\"NEGATIVE: passes -- penalty applies -- only when the patch changes source.\"\"\"\n>       assert _patch_modifies_source() is True\nE       assert False is True\nE        +  where False = _patch_modifies_source()\n\ntest_output.py:893: AssertionError\n=========================== short test summary info ============================\nFAILED test_output.py::test_read_prove_and_update_db_in_service - AssertionEr...\nFAILED test_output.py::test_opened_fulfillment_batch - AssertionError: crates...\nFAILED test_output.py::test_modified_code_penalty - assert False is True\n========================= 3 failed, 16 passed in 0.28s =========================\n"
+        }
+      },
+      {
+        "name": "rubric",
+        "value": 0.2653,
+        "weight": 49.0,
+        "kind": "rubric",
+        "detail": {
+          "criteria": [
+            {
+              "name": "r1",
+              "criterion": "The response names estimate_gas_to_fulfill in crates/boundless-market/src/prover_utils/mod.rs as the pricing-time routine that produces the inflated fulfillment gas figure the refusal turns on.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 5.0,
+              "met": true,
+              "reasoning": "The answer explicitly identifies the private estimate_gas_to_fulfill in crates/boundless-market/src/prover_utils/mod.rs as supplying the per-request estimate used to produce order_gas_cost and the refusal."
+            },
+            {
+              "name": "r2",
+              "criterion": "The response names price_order in crates/boundless-market/src/prover_utils/mod.rs as the routine that turns that estimate into the order's gas cost by multiplying it by the current gas price and stores it on the order.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "It names OrderPricingContext::price_order and says it produces order_gas_cost, but it does not clearly explain that price_order multiplies the gas estimate by the current gas price and stores the estimate on the order."
+            },
+            {
+              "name": "r3",
+              "criterion": "The response traces the decline of a funded order to the gas cost being compared against the request's own offer maxPrice, naming either check_available_balances in crates/broker/src/order_pricer/helpers.rs or the post-preflight re-check inside price_order in crates/boundless-market/src/prover_utils/mod.rs as the branch that skips it.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": true,
+              "reasoning": "It identifies check_available_balances as an affordability gate and, more directly, identifies price_order's final max-price-derived mcycle-price test as the refusal, showing the calculation based on maxPrice minus order_gas_cost."
+            },
+            {
+              "name": "r4",
+              "criterion": "The response names calculate_exec_limits in crates/boundless-market/src/prover_utils/mod.rs as subtracting the same gas cost from the offer max price before deriving the cycle budget, which is why accepted orders get a smaller preflight allowance.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 5.0,
+              "met": true,
+              "reasoning": "It explicitly names calculate_exec_limits and gives the formula subtracting order_gas_cost from maxPrice before deriving the execution-cycle limit, explaining the shrunken work allowance."
+            },
+            {
+              "name": "r5",
+              "criterion": "The response names submission_path_for_risc0_selector in crates/risc0-backend/src/lib.rs as the backend routine that routes the affected groth16-class selectors to SubmissionPath::Direct.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 5.0,
+              "met": true,
+              "reasoning": "It explicitly names submission_path_for_risc0_selector in crates/risc0-backend/src/lib.rs and states that the affected Blake3Groth16 selector takes SubmissionPath::Direct."
+            },
+            {
+              "name": "r6",
+              "criterion": "The response states that an order on the Direct submission path is set to ReadyForSubmission in crates/broker/src/order_processor/service.rs and so never enters the batcher, incurring no set-builder aggregation and no root submission.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "The answer does not mention ReadyForSubmission, the order_processor/service.rs transition, or explain that Direct orders bypass the batcher, set-builder aggregation, and root submission."
+            },
+            {
+              "name": "r7",
+              "criterion": "The response names the near-identical estimate_gas_to_fulfill in crates/broker/src/utils/helpers.rs as a second copy of the same additive formula, separate from the pricing-time copy and differing by a journal-calldata term.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "Although it mentions the same-named helper in crates/broker/src/utils/helpers.rs, it does not describe it as a second copy of the defective additive formula or explain that its distinguishing extra term is journal calldata."
+            },
+            {
+              "name": "r8",
+              "criterion": "The response states that the pricing-time estimate classifies a request only by the proof type looked up in the supported-selector map and never consults the submission path or the router policy, so the classification that decides how an order settles and the one that decides what it is charged disagree.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 5.0,
+              "met": false,
+              "reasoning": "The answer does not explain that pricing consults only SupportedSelectors proof type while ignoring SubmissionPath and router policy. Instead, it frames the disagreement as broker versus requestor offer sizing."
+            },
+            {
+              "name": "r9",
+              "criterion": "The response states that adding groth16_verify_gas_estimate on top of fulfill_gas_estimate charges a second on-chain groth16 verification that an order settling on the direct path does not incur.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 5.0,
+              "met": false,
+              "reasoning": "It does not explain that the added groth16 term represents a second verification absent from Direct settlement; it instead asserts that the extra groth16 cost is real because the order is Direct."
+            },
+            {
+              "name": "r10",
+              "criterion": "The response reports the estimate charged to an affected groth16-selector order as roughly 670,000 gas, the sum of the 420,000 base and the 250,000 groth16 term.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "The answer mentions 420,000 and 250,000 in a different comparison but never reports the affected pricing estimate as approximately 670,000 gas."
+            },
+            {
+              "name": "r11",
+              "criterion": "The response explains what separates the two groups of requests: a selector classified Inclusion or Any adds nothing beyond the base, and every selector that settles through the batcher falls in that group, so only the groth16-class selectors are overcharged.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "It says Any/Inclusion add zero, but claims Groth16 agrees and Blake3Groth16 alone diverges. It does not explain that batched Any/Inclusion requests retain only the base while groth16-class Direct requests are overcharged."
+            },
+            {
+              "name": "r12",
+              "criterion": "The response names estimate_gas_usage_upper_bound in crates/boundless-market/src/request_builder/offer_layer.rs as innocent, because it runs while a requestor builds an offer and the broker crate never reaches the request_builder module.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "It does not name estimate_gas_usage_upper_bound or clear it as unreachable from the broker. Instead, it identifies requestor offer-layer sizing as the defect."
+            },
+            {
+              "name": "r13",
+              "criterion": "The response names estimate_gas_to_lock in crates/broker/src/utils/helpers.rs as correct, since lock gas does not depend on how the order later settles.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 1.0,
+              "met": false,
+              "reasoning": "It does not name estimate_gas_to_lock or explain that lock gas is independent of the later settlement path."
+            },
+            {
+              "name": "r14",
+              "criterion": "The response clears both indexer uses of the same two gas constants, in crates/indexer/src/efficiency/service.rs and crates/indexer/src/market/service/status.rs, as reporting that decides nothing.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 1.0,
+              "met": false,
+              "reasoning": "It mentions only the efficiency indexer use and treats it as supporting evidence for its diagnosis; it neither clears both indexer locations nor states that they are reporting-only and decision-free."
+            },
+            {
+              "name": "r15",
+              "criterion": "The response names apply_gas_limits in crates/broker/src/order_locker/service.rs as a consumer of the broker's lock-time copy that reserves the summed estimate against the signer's balance rather than against the request's max price.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 1.0,
+              "met": false,
+              "reasoning": "It names OrderLocker::lock_order rather than apply_gas_limits and does not explain that apply_gas_limits reserves the summed estimate against the signer's balance rather than the request max price."
+            },
+            {
+              "name": "r16",
+              "criterion": "The response lists file paths and routine names without explaining how they produce the reported refusal and the shrunken preflight allowance.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": -5.0,
+              "met": false,
+              "reasoning": "The response does explain a causal chain from order_gas_cost through the max-price-derived refusal and through calculate_exec_limits to the shrunken allowance, so it is not merely a list of symbols and paths."
+            },
+            {
+              "name": "r17",
+              "criterion": "The response blames estimate_gas_usage_upper_bound in crates/boundless-market/src/request_builder/offer_layer.rs for the declined orders.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": -5.0,
+              "met": true,
+              "reasoning": "The answer explicitly blames the requestor's offer-layer sizing logic, calls it the defect, and proposes fixing offer_layer.rs. This is substantively blaming the request-builder gas upper-bound logic for the declines even though the function name is omitted."
+            },
+            {
+              "name": "r18",
+              "criterion": "The response attributes the declined orders to the prover's gas-token balance being too low to cover the job.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": -3.0,
+              "met": false,
+              "reasoning": "It does not attribute the declines to an underfunded prover gas-token balance; its claimed cause is undersized requestor offers and the price guard."
+            },
+            {
+              "name": "r19",
+              "criterion": "The response identifies the batcher or the set-builder aggregation as the origin of the declined orders.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": -3.0,
+              "met": false,
+              "reasoning": "It does not identify the batcher or set-builder aggregation as the source of the declines."
+            }
+          ],
+          "dimension_divergence": {
+            "pytest": 0.8824,
+            "rubric": 0.2653,
+            "gap": 0.617
+          }
+        }
+      }
+    ]
+  }
+}

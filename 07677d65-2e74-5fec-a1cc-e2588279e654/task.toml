@@ -1,0 +1,58 @@
+schema_version = "1.4"
+
+[[artifacts]]
+source = "/logs/agent/trajectory.json"
+
+[[artifacts]]
+source = "/logs/agent/answer.md"
+
+[[artifacts]]
+source = "/logs/agent/sessions"
+destination = "agent-sessions"
+
+[[artifacts]]
+source = "/logs/agent/completions"
+destination = "agent-completions"
+
+[task]
+version = "1.0.0"
+name = "teresa/07677d65-2e74-5fec-a1cc-e2588279e654"
+uuid_v5 = "07677d65-2e74-5fec-a1cc-e2588279e654"
+authors = [
+    { name = "Om Prakash", email = "om.prakash@ethara.ai" },
+]
+keywords = ["java", "function_localization"]
+
+[metadata]
+instance_id = "07677d65-2e74-5fec-a1cc-e2588279e654"
+repo = "hibernate/hibernate-orm"
+base_commit = "a512ede38b693769d8fd801a23c5c7b640df6f7f"
+language = "java"
+family = "function_localization"
+harbor_commit = "cfc54c995e90cd438deb862189a58053b9d89fd3"
+
+[verifier]
+timeout_sec = 600.0
+
+[verifier.env]
+HG_INSTANCE_ID = "07677d65-2e74-5fec-a1cc-e2588279e654"
+JUDGE_MODEL = "${JUDGE_MODEL:-}"
+JUDGE_API_KEY = "${JUDGE_API_KEY:-}"
+JUDGE_BASE_URL = "${JUDGE_BASE_URL:-}"
+
+[[verifier.collect]]
+command = "git -C /workspace/hibernate__hibernate-orm add -A && git -C /workspace/hibernate__hibernate-orm diff --cached > /logs/artifacts/agent.patch"
+
+[agent]
+network_mode = "allowlist"
+allowed_hosts = ["192.168.65.0/24", "172.16.0.0/12"]
+
+[environment]
+network_mode = "public"
+docker_image = "426628337772.dkr.ecr.ap-south-1.amazonaws.com/teresa:07677d65-2e74-5fec-a1cc-e2588279e654@sha256:d77d444f36410070805d580c31b03b3354beec0aec0cb7d7858bf5bf866ee7a0"
+build_timeout_sec = 3600.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 20480
+gpus = 0
+os = "linux"

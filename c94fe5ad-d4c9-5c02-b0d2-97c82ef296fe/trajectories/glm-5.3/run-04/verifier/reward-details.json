@@ -1,0 +1,436 @@
+{
+  "c94fe5ad-d4c9-5c02-b0d2-97c82ef296fe": {
+    "instance_id": "c94fe5ad-d4c9-5c02-b0d2-97c82ef296fe",
+    "reward": 0.6122,
+    "graded_ok": true,
+    "dimensions": {
+      "pytest": 0.8421,
+      "rubric": 0.3824
+    },
+    "criteria": [
+      {
+        "name": "deterministic_tests",
+        "value": 0.8421,
+        "weight": 1.0,
+        "kind": "pytest",
+        "detail": {
+          "returncode": 1,
+          "weighted": true,
+          "score": 0.8421,
+          "tests": {
+            "test_read_default_constructor_in_src_lib": {
+              "status": "PASSED",
+              "weight": 5.0,
+              "earned": 5.0
+            },
+            "test_read_srcmap_in_src_macros": {
+              "status": "PASSED",
+              "weight": 3.0,
+              "earned": 3.0
+            },
+            "test_opened_src_source_map": {
+              "status": "PASSED",
+              "weight": 1.0,
+              "earned": 1.0
+            },
+            "test_opened_src_lib": {
+              "status": "PASSED",
+              "weight": 1.0,
+              "earned": 1.0
+            },
+            "test_opened_classes_constructor": {
+              "status": "PASSED",
+              "weight": 1.0,
+              "earned": 1.0
+            },
+            "test_opened_classes_mod": {
+              "status": "FAILED",
+              "weight": 1.0,
+              "earned": 0.0
+            },
+            "test_opened_class_properties_mod": {
+              "status": "PASSED",
+              "weight": 1.0,
+              "earned": 1.0
+            },
+            "test_opened_src_private_in_object": {
+              "status": "FAILED",
+              "weight": 1.0,
+              "earned": 0.0
+            },
+            "test_opened_src_class_fields_use_set": {
+              "status": "PASSED",
+              "weight": 1.0,
+              "earned": 1.0
+            },
+            "test_opened_src_decorator_impl": {
+              "status": "PASSED",
+              "weight": 1.0,
+              "earned": 1.0
+            },
+            "test_opened_decorators_mod": {
+              "status": "PASSED",
+              "weight": 1.0,
+              "earned": 1.0
+            },
+            "test_opened_src_constructor": {
+              "status": "PASSED",
+              "weight": 1.0,
+              "earned": 1.0
+            },
+            "test_answer_grounded": {
+              "status": "FAILED",
+              "weight": 1.0,
+              "earned": 0.0
+            },
+            "test_modified_code_penalty": {
+              "status": "FAILED",
+              "weight": -5.0,
+              "earned": 0.0
+            }
+          },
+          "tail": ", ('the answer cites ' + ', '.join(ungrounded)\n                                + ' but their contents were never displayed' + _absent())\nE       AssertionError: the answer cites .../class_properties/member_init.rs but their contents were never displayed\nE       assert not ['.../class_properties/member_init.rs']\n\ntest_output.py:596: AssertionError\n__________________________ test_modified_code_penalty __________________________\n\n    def test_modified_code_penalty():\n        \"\"\"NEGATIVE: passes -- penalty applies -- only when the patch changes source.\"\"\"\n>       assert _patch_modifies_source() is True\nE       assert False is True\nE        +  where False = _patch_modifies_source()\n\ntest_output.py:632: AssertionError\n=========================== short test summary info ============================\nFAILED test_output.py::test_opened_classes_mod - AssertionError: crates/swc_e...\nFAILED test_output.py::test_opened_src_private_in_object - AssertionError: cr...\nFAILED test_output.py::test_answer_grounded - AssertionError: the answer cite...\nFAILED test_output.py::test_modified_code_penalty - assert False is True\n========================= 4 failed, 10 passed in 0.11s =========================\n"
+        }
+      },
+      {
+        "name": "rubric",
+        "value": 0.3824,
+        "weight": 68.0,
+        "kind": "rubric",
+        "detail": {
+          "criteria": [
+            {
+              "name": "r1",
+              "criterion": "The response reports that default_constructor is the sole routine in the tree that manufactures the injected constructor.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 5.0,
+              "met": false,
+              "reasoning": "The response identifies default_constructor as the relevant routine, but does not state that it is the sole routine in the tree that manufactures injected constructors."
+            },
+            {
+              "name": "r2",
+              "criterion": "The response reports that fold_constructor treats a dummy span on the Constructor node as its mark that the constructor was injected.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "It does not discuss fold_constructor using Constructor.span.is_dummy() as the marker for an injected constructor."
+            },
+            {
+              "name": "r3",
+              "criterion": "The response reports that the super(...args) CallExpr carries a dummy span from the moment default_constructor builds it.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": true,
+              "reasoning": "It says the synthesized constructor, including its super(...) call, is built with DUMMY_SP spans, conveying that the CallExpr is dummy-positioned when default_constructor creates it."
+            },
+            {
+              "name": "r4",
+              "criterion": "The response reports that fold_constructor discards the parameter list of an injected constructor.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 1.0,
+              "met": false,
+              "reasoning": "It does not report that fold_constructor removes the injected constructor's parameter list."
+            },
+            {
+              "name": "r5",
+              "criterion": "The response reports that the Constructor node and the super(...args) CallExpr nested inside it carry independently settable spans.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 5.0,
+              "met": false,
+              "reasoning": "It does not explain that the outer Constructor span and nested super-call CallExpr span are independently assignable."
+            },
+            {
+              "name": "r6",
+              "criterion": "The response identifies fold_constructor in crates/swc_ecma_compat_es2015/src/classes/constructor.rs as a caller that obtains the injected constructor from default_constructor.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 1.0,
+              "met": false,
+              "reasoning": "It identifies the ES2022 ClassProperties::process_constructor caller, not fold_constructor in crates/swc_ecma_compat_es2015/src/classes/constructor.rs."
+            },
+            {
+              "name": "r7",
+              "criterion": "The response accounts for a decorator heavy package and a decorator free package showing the same defect by pointing to default_constructor as common to both paths.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": true,
+              "reasoning": "It identifies both field lowering and decorator transforms as reaching the same default_constructor helper, explaining why decorator-heavy and decorator-free paths can share the defect."
+            },
+            {
+              "name": "r8",
+              "criterion": "The response explains that sources which look interchangeable diverge according to whether the author wrote a constructor of their own.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": true,
+              "reasoning": "It explicitly makes the file-dependent trigger whether the class lacks an explicit constructor, thereby distinguishing author-written-constructor and synthesized-constructor cases."
+            },
+            {
+              "name": "r9",
+              "criterion": "The response explains that a class carrying an author written constructor is lowered from parsed nodes that already hold real source positions.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "It does not explain that an author-written constructor is represented by parsed nodes with real source positions."
+            },
+            {
+              "name": "r10",
+              "criterion": "The response links the symptom clearing at a higher output language level to the class lowering passes falling idle.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "Although it mentions targets below ES2022 and that pass ordering decides whether lowering runs, it does not clearly state that raising the output language level clears the symptom because class-lowering passes become idle."
+            },
+            {
+              "name": "r11",
+              "criterion": "The response explains the colleague's unreproducible recovery as a tidy up that happened to add an explicit constructor to the class whose frame misresolved.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 1.0,
+              "met": false,
+              "reasoning": "It does not discuss a tidy-up adding an explicit constructor as the explanation for a colleague's unreproducible recovery."
+            },
+            {
+              "name": "r12",
+              "criterion": "The response reports that the emitted program text is unaffected by this defect.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 1.0,
+              "met": false,
+              "reasoning": "It does not state that emitted JavaScript program text is unaffected; saying no files were changed describes the investigation, not the defect's output behavior."
+            },
+            {
+              "name": "r13",
+              "criterion": "The response attributes the clean resolution of the neighbouring frames to the parsed nodes around the injected constructor holding their own source positions.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": true,
+              "reasoning": "It says surrounding initializer expressions have real parser-produced spans and explicitly uses that to explain why neighboring frames resolve correctly."
+            },
+            {
+              "name": "r14",
+              "criterion": "The response sets out the causal order that runs from default_constructor minting the unpositioned super(...args) CallExpr to code generation declining to record a mapping entry.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "It identifies the dummy span at construction time but does not set out the downstream causal chain in which code generation declines to record a mapping entry."
+            },
+            {
+              "name": "r15",
+              "criterion": "The response identifies Emitter::emit_call_expr in crates/swc_ecma_codegen/src/lib.rs as the routine that requests a mapping entry for every call expression.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 1.0,
+              "met": false,
+              "reasoning": "It does not identify Emitter::emit_call_expr or state that it requests a mapping for every call expression."
+            },
+            {
+              "name": "r16",
+              "criterion": "The response notes the further dummy position guard applied in crates/swc_common/src/source_map.rs.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 1.0,
+              "met": false,
+              "reasoning": "It lists SourceMap::build_source_map_with_config as an innocent participant but does not report its additional dummy-position guard."
+            },
+            {
+              "name": "r17",
+              "criterion": "The response clears inject_after_super in crates/swc_ecma_utils/src/constructor.rs of responsibility for the missing position.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 1.0,
+              "met": true,
+              "reasoning": "It explicitly labels inject_after_super/Injector as an innocent participant in the flow, clearing it of responsibility."
+            },
+            {
+              "name": "r18",
+              "criterion": "The response reports that the rest parameter default_constructor builds also carries a dummy span.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 1.0,
+              "met": false,
+              "reasoning": "It does not specifically report that the synthesized rest parameter carries a dummy span."
+            },
+            {
+              "name": "r19",
+              "criterion": "The response reports that the Super callee node inside the super(...args) CallExpr carries a dummy span of its own.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 1.0,
+              "met": false,
+              "reasoning": "It reports a dummy span on the super(...) call as a whole, but not the distinct dummy span on the nested Super callee node."
+            },
+            {
+              "name": "r20",
+              "criterion": "The response states that default_constructor builds each node it returns from scratch.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 1.0,
+              "met": false,
+              "reasoning": "It says the synthesized constructor is built with dummy spans, but does not state that default_constructor constructs every returned node from scratch."
+            },
+            {
+              "name": "r21",
+              "criterion": "The agent opens crates/swc_ecma_utils/src/lib.rs during its investigation.",
+              "type": "agent behavior",
+              "check": "trajectory",
+              "weight": 3.0,
+              "met": true,
+              "reasoning": "The trajectory explicitly opens and reads `crates/swc_ecma_utils/src/lib.rs`, including the full `default_constructor` implementation at lines 2167–2209."
+            },
+            {
+              "name": "r22",
+              "criterion": "The agent enumerates the callers of default_constructor across more than one crate.",
+              "type": "agent behavior",
+              "check": "trajectory",
+              "weight": 3.0,
+              "met": true,
+              "reasoning": "The agent runs a repository-wide grep for `default_constructor` callers and lists call sites in multiple crates, including `swc_ecma_compat_es2015`, `swc_ecma_compat_es2022`, `swc_ecma_transforms_compat`, and `swc_ecma_transforms_proposal`."
+            },
+            {
+              "name": "r23",
+              "criterion": "The agent reads the code generation path that records mapping entries.",
+              "type": "agent behavior",
+              "check": "trajectory",
+              "weight": 1.0,
+              "met": true,
+              "reasoning": "The agent reads the source-map recording path, including the `srcmap!` macro, `emit_call_expr`, `JsWriter::add_srcmap`/`srcmap`, and `SourceMap::build_source_map_with_config`."
+            },
+            {
+              "name": "r24",
+              "criterion": "The agent reads the body of fold_constructor as far as its span inspection.",
+              "type": "agent behavior",
+              "check": "trajectory",
+              "weight": 1.0,
+              "met": true,
+              "reasoning": "The agent reads `fold_constructor` through the relevant span inspection, including `let is_constructor_default = constructor.span.is_dummy();`."
+            },
+            {
+              "name": "r25",
+              "criterion": "The response presents the dummy position guard in the code generation path as the code that ought to change.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": -5.0,
+              "met": false,
+              "reasoning": "The response explicitly labels the code-generation and source-map routines as innocent participants rather than proposing that their dummy-position guard should change."
+            },
+            {
+              "name": "r26",
+              "criterion": "The response offers uncited general theory about position mapping behaviour.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": -3.0,
+              "met": false,
+              "reasoning": "The response does not offer broad, uncited theory about position mapping; it gives a repository-specific diagnosis involving synthesized DUMMY_SP nodes."
+            },
+            {
+              "name": "r27",
+              "criterion": "The response places the fault in the crash reporter or in the consumer that reads the mapping file.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": -1.0,
+              "met": false,
+              "reasoning": "The response places the root cause in AST construction by default_constructor, not in a crash reporter or mapping-file consumer."
+            },
+            {
+              "name": "r28",
+              "criterion": "The response attributes the misresolving frame to the parser recording source positions incorrectly.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": -1.0,
+              "met": false,
+              "reasoning": "It says neighboring expressions have real parser-produced spans and that the problematic constructor is synthesized, so it does not blame parser position recording."
+            },
+            {
+              "name": "r29",
+              "criterion": "The response explains that default_constructor receives only a boolean saying whether the class has a superclass, so it has no source position it could place on the nodes it builds.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "Although it identifies default_constructor and its use of DUMMY_SP, it does not explain that the routine receives only a has-super boolean and consequently has no source position available."
+            },
+            {
+              "name": "r30",
+              "criterion": "The response explains that code generation records a mapping entry for a call expression only when the node's low position is not dummy, so the synthesized super(...args) call contributes no entry.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 3.0,
+              "met": false,
+              "reasoning": "The response names srcmap! and related code-generation routines but does not explain the non-dummy low-position guard or explicitly connect that guard to the synthesized call contributing no mapping entry."
+            },
+            {
+              "name": "r31",
+              "criterion": "The response clears fold_constructor in crates/swc_ecma_compat_es2015/src/classes/constructor.rs of responsibility for the missing position, because it receives an already built Constructor and never assigns the span of the super(...args) call.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 5.0,
+              "met": false,
+              "reasoning": "The response does not discuss fold_constructor in crates/swc_ecma_compat_es2015/src/classes/constructor.rs or explain why it is innocent."
+            },
+            {
+              "name": "r32",
+              "criterion": "The response presents fold_constructor as the routine answerable for the missing position of the synthesized super(...args) call.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": -1.0,
+              "met": false,
+              "reasoning": "The response does not identify fold_constructor as responsible; it identifies default_constructor instead."
+            },
+            {
+              "name": "r33",
+              "criterion": "The response places the cause of the misresolving frame in the minifier or another compression pass.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": -1.0,
+              "met": false,
+              "reasoning": "The minifier is expressly described as an innocent participant that only affects whether the pass runs, not as the cause of the bad frame."
+            },
+            {
+              "name": "r34",
+              "criterion": "The response cites a repository crate or file path that does not exist at the base commit.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": -1.0,
+              "met": false,
+              "reasoning": "There is no clear evidence that any cited repository crate or path is nonexistent at the base commit."
+            },
+            {
+              "name": "r35",
+              "criterion": "The response names default_constructor in crates/swc_ecma_utils/src/lib.rs as the routine answerable for the difference between the correctly resolving frames and the misresolving synthesized super(...args) frame.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": 5.0,
+              "met": true,
+              "reasoning": "The response explicitly names default_constructor in crates/swc_ecma_utils/src/lib.rs as the answerable routine and explains that it gives the synthesized super call DUMMY_SP while neighboring parsed initializer expressions have real spans."
+            },
+            {
+              "name": "r36",
+              "criterion": "The response lists file paths and routine names without explaining how they produce the reported behaviour.",
+              "type": "answer content",
+              "check": "final_answer",
+              "weight": -5.0,
+              "met": false,
+              "reasoning": "The response does more than list names: it explains that default_constructor synthesizes the constructor and super call with DUMMY_SP, contrasting them with neighboring parser-positioned expressions and connecting this to the mis-mapped frame."
+            }
+          ],
+          "dimension_divergence": {
+            "pytest": 0.8421,
+            "rubric": 0.3824,
+            "gap": 0.4598
+          }
+        }
+      }
+    ]
+  }
+}
