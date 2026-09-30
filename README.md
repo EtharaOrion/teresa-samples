@@ -1,5 +1,3 @@
-GENERATED SECTION. DO NOT HAND-EDIT.
-
 # samples
 
 The curated lane of this corpus: at most 30 Harbor task bundles, every anchor seated first and every other bundle in seal order. Bundles past that ceiling live in `delivery/`.
