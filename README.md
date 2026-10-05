@@ -157,3 +157,5 @@ The chart SVGs and PNG fallbacks under `images/` (referenced from the `<picture>
 The per-run agent artifacts under `agent/` (the full `trajectory.json`, raw `completions/`, per-session event stream) and the deterministic verifier artifacts under `verifier/` (`reward.json`, `reward-details.json`, `ctrf.json`, `test-stdout.txt`) are shipped for inspection but are not needed to reproduce the summary numbers.
 
 The Docker environment each task built the workspace inside is pinned by SHA in `task.toml` (`environment.docker_image`, e.g. `<AWS_ACCOUNT_ID>.dkr.ecr.ap-south-1.amazonaws.com/teresa:<uuid>@sha256:...`); the image itself is not redistributed in this sample.
+
+<!-- trinity:lane-readme:authored -->
