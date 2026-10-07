@@ -1,4 +1,4 @@
-
+GENERATED SECTION. DO NOT HAND-EDIT.
 
 <p align="center"><img src="images/hero.svg" alt="Teresa" width="720"></p>
 
