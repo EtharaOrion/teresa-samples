@@ -1,8 +1,8 @@
 GENERATED SECTION. DO NOT HAND-EDIT.
 
-<p align="center"><img src="images/hero.svg" alt="Project" width="720"></p>
+<p align="center"><img src="images/hero.svg" alt="Teresa" width="720"></p>
 
-# Project: samples
+# Teresa: samples
 
 <p align="center"><b>The samples lane: 3 of 30 Harbor task bundles.</b></p>
 
