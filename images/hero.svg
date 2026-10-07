@@ -1,85 +1,18 @@
-<svg width="1760" height="532" viewBox="0 0 1760 532" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Teresa — read-only code comprehension and scored execution traces">
-  <title>Teresa — read-only code comprehension and scored execution traces</title>
-  <desc>Editorial ink, teal and gold hero graphic. Curved execution-trace lines converge from the lower field into a faceted gold gem at right, evoking traces crystallizing into a scored outcome, beside a large serif "TERESA" wordmark.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="240" viewBox="0 0 880 240" role="img" aria-label="Teresa, code understanding environments">
+  <title>Teresa</title>
+  <desc>Typographic hero mark for the Teresa code understanding task corpus.</desc>
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#050c0c"/>
-      <stop offset="55%" stop-color="#0a1e1c"/>
-      <stop offset="100%" stop-color="#071313"/>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1f2933" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#1f2933" stop-opacity="1"/>
+      <stop offset="1" stop-color="#1f2933" stop-opacity="0"/>
     </linearGradient>
-    <radialGradient id="vignette" cx="68%" cy="45%" r="75%">
-      <stop offset="0%" stop-color="#0d2624" stop-opacity="0"/>
-      <stop offset="70%" stop-color="#020707" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#010404" stop-opacity="0.55"/>
-    </radialGradient>
-    <linearGradient id="gem" x1="20%" y1="10%" x2="85%" y2="95%">
-      <stop offset="0%" stop-color="#f7e2ab"/>
-      <stop offset="32%" stop-color="#e8b968"/>
-      <stop offset="66%" stop-color="#b9781f"/>
-      <stop offset="100%" stop-color="#4a2c0c"/>
-    </linearGradient>
-    <radialGradient id="gemGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#35d0ba" stop-opacity="0.32"/>
-      <stop offset="100%" stop-color="#35d0ba" stop-opacity="0"/>
-    </radialGradient>
-    <clipPath id="frame"><rect x="0" y="0" width="1760" height="532" rx="0"/></clipPath>
   </defs>
-  <g clip-path="url(#frame)">
-    <rect width="1760" height="532" fill="url(#bg)"/>
-    <rect width="1760" height="532" fill="url(#vignette)"/>
-    <ellipse cx="1360" cy="250" rx="345" ry="300" stroke="#35d0ba" stroke-opacity="0.10" stroke-width="1.5" fill="none" stroke-dasharray="2 12" transform="rotate(-8 1360 250)"/>
-    <g>
-      <path d="M 1640 118 A 320 300 0 0 1 1672 262" fill="none" stroke="#35d0ba" stroke-opacity="0.38" stroke-width="1.5" stroke-dasharray="1 7"/>
-      <circle cx="1640" cy="118" r="5" fill="#35d0ba" fill-opacity="0.8"/>
-      <circle cx="1640" cy="118" r="10" fill="none" stroke="#35d0ba" stroke-opacity="0.4" stroke-width="1"/>
-    </g>
-    <g fill="none">
-      <path d="M 980 470 C 1080 420, 1150 360, 1230 300" stroke="#8fe3d4" stroke-opacity="0.30" stroke-width="1.5"/>
-      <path d="M 1010 500 C 1110 440, 1170 380, 1240 315" stroke="#8fe3d4" stroke-opacity="0.22" stroke-width="1.5" stroke-dasharray="1 8"/>
-      <path d="M 1075 90  C 1140 130, 1190 175, 1235 222" stroke="#8fe3d4" stroke-opacity="0.28" stroke-width="1.5"/>
-      <path d="M 1120 45  C 1175 95, 1210 150, 1240 205" stroke="#8fe3d4" stroke-opacity="0.18" stroke-width="1.5" stroke-dasharray="1 8"/>
-      <path d="M 1560 380 C 1470 360, 1400 330, 1345 292" stroke="#e2ac52" stroke-opacity="0.34" stroke-width="1.5"/>
-      <circle cx="1080" cy="428" r="3.5" fill="#8fe3d4" fill-opacity="0.55"/>
-      <circle cx="1150" cy="368" r="3" fill="#8fe3d4" fill-opacity="0.4"/>
-      <circle cx="1140" cy="128" r="3.5" fill="#8fe3d4" fill-opacity="0.55"/>
-      <circle cx="1190" cy="173" r="3" fill="#8fe3d4" fill-opacity="0.4"/>
-      <circle cx="1465" cy="358" r="3.5" fill="#e2ac52" fill-opacity="0.6"/>
-    </g>
-    <g transform="translate(1330,262)">
-      <circle r="145" fill="url(#gemGlow)"/>
-      <ellipse rx="118" ry="128" fill="none" stroke="#8fe3d4" stroke-opacity="0.35" stroke-width="1.5"/>
-      <g transform="rotate(6)" fill="none">
-        <polygon points="0,-92 62,-24 40,88 -40,88 -62,-24" fill="url(#gem)" stroke="#2c1a06" stroke-opacity="0.45" stroke-width="1.5"/>
-        <polygon points="0,-92 62,-24 0,10 -62,-24" fill="#fbe9c2" fill-opacity="0.20"/>
-        <path d="M 0,-92 L 0,10" stroke="#2c1a06" stroke-opacity="0.28" stroke-width="1"/>
-        <path d="M 62,-24 L 0,10 L -62,-24" stroke="#2c1a06" stroke-opacity="0.28" stroke-width="1"/>
-        <path d="M 0,10 L 40,88" stroke="#2c1a06" stroke-opacity="0.22" stroke-width="1"/>
-        <path d="M 0,10 L -40,88" stroke="#2c1a06" stroke-opacity="0.22" stroke-width="1"/>
-        <path d="M -30,-52 L -12,-30" stroke="#fdf3df" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round"/>
-      </g>
-      <path d="M 44,70 C 90,110 140,140 205,150" fill="none" stroke="#e2ac52" stroke-opacity="0.55" stroke-width="1.5"/>
-      <circle cx="205" cy="150" r="4" fill="#e2ac52"/>
-      <circle cx="205" cy="150" r="9" fill="none" stroke="#e2ac52" stroke-opacity="0.5" stroke-width="1"/>
-    </g>
-    <g font-family="Georgia, 'Iowan Old Style', 'Times New Roman', ui-serif, serif">
-      <text x="112" y="268" font-size="156" letter-spacing="6" fill="#f2f4ee">TERESA</text>
-    </g>
-    <line x1="115" y1="300" x2="700" y2="300" stroke="#35d0ba" stroke-opacity="0.4" stroke-width="1.5"/>
-    <text x="114" y="336" font-family="'JetBrains Mono','SF Mono','Berkeley Mono',ui-monospace,'Courier New',monospace" font-size="27" letter-spacing="5.5" fill="#35d0ba" fill-opacity="0.92">AGENT TASKS · EXECUTION TRACES · SCORED OUTCOMES</text>
-    <g transform="translate(1140,472)" font-family="'JetBrains Mono','SF Mono',ui-monospace,monospace" font-size="15" fill="#8fe3d4" fill-opacity="0.4">
-      <line x1="0" y1="0" x2="500" y2="0" stroke="#8fe3d4" stroke-opacity="0.3" stroke-width="1"/>
-      <g stroke="#8fe3d4" stroke-opacity="0.35" stroke-width="1">
-        <line x1="0" y1="-6" x2="0" y2="0"/>
-        <line x1="125" y1="-6" x2="125" y2="0"/>
-        <line x1="250" y1="-6" x2="250" y2="0"/>
-        <line x1="375" y1="-6" x2="375" y2="0"/>
-        <line x1="500" y1="-6" x2="500" y2="0"/>
-      </g>
-      <text x="-8" y="20" text-anchor="middle">0</text>
-      <text x="125" y="20" text-anchor="middle">25</text>
-      <text x="250" y="20" text-anchor="middle">50</text>
-      <text x="375" y="20" text-anchor="middle">75</text>
-      <text x="508" y="20" text-anchor="middle">100</text>
-    </g>
+  <rect width="880" height="240" fill="#fbfbfa"/>
+  <g fill="#1f2933" font-family="Menlo, Consolas, monospace">
+    <text x="440" y="96" font-size="66" letter-spacing="14" text-anchor="middle">TERESA</text>
+    <rect x="140" y="122" width="600" height="1" fill="url(#rule)"/>
+    <text x="440" y="156" font-size="15" letter-spacing="4" text-anchor="middle" fill="#52606d">CODE UNDERSTANDING ENVIRONMENTS</text>
+    <text x="440" y="192" font-size="13" letter-spacing="2" text-anchor="middle" fill="#7b8794">localization &#183; dependency search &#183; comprehension</text>
   </g>
 </svg>
